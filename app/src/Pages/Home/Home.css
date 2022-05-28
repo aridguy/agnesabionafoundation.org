@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+.landing {
+    background-image: url(../../Assets/istockphoto-469538141-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35em;
+    background-attachment: fixed;
+
+}
+
+.nav {
+    z-index: 999;
+    height: 70px;
+    width: 100%;
+    background-color: #670842;
+    position: relative;
+    box-shadow: 2px 2px 20px 4px black;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>li {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav>.nav-links>li:hover {
+    background-color: rgba(252, 241, 241, 0.3);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(118, 10, 92, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #670842;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>li {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: hidden;
+    }
+
+}
+
+/* my customes starts here */
+
+.brand {
+    width: 60px;
+
+}
+
+.donate {
+    background-color: hsl(48, 89%, 50%);
+    width: 8rem;
+
+}
+
+.main-head-contents {
+    margin-top: 11em;
+    color: white;
+}
+
+.hText {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.s-t {
+    color: #ffffff;
+    letter-spacing: 8px;
+}
+
+.st2 {
+    color: white;
+    letter-spacing: 8px;
+    font-family: 'folio';
+}
+
+.section2 {
+    background-color: #670842;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sect2-texta {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.sect2textb {
+    color: white;
+    letter-spacing: 6px;
+}
+
+.section3 {
+    padding-top: 6em;
+    padding-top: 5em;
+    padding-bottom: 8em;
+}
+
+.backgs {
+    padding: 2em;
+    text-align: left;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 20em;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.backgs:hover {
+    padding: 2em;
+    text-align: left;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 20em;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.133);
+}
+
+/* .lcare{
+      background-color: #dbdb0e;
+      padding: 10px;
+  }
+  .lcare-text{
+      color: #44062c;
+      font-weight: bolder;
+      padding-top: 2px;
+  } */
+
+  .about-sect{
+      padding-top: 8em;
+      padding-bottom: 10em;
+      background-color: #fdfcfd;
+  }
+
+  .abtHead{
+      font-family: sans-serif;
+      font-weight: 900;
+     
+      color: rgb(0, 0, 0);
+  }
+
+  .txtAbt{
+      font-size: larger;
+  }
+  .learn{
+      width: 50%;
+      height: 3em;
+      outline: none;
+      border: none;
+      box-shadow: none;
+     
+  }
+
+  .learn:hover{
+      color: white;
+      background-color: #f5d612;
+      outline: none;
+      border: none;
+  }
+
+  .dabtTitle{
+      font-weight: bolder;
+  }
+
+  .row1{
+      padding-bottom:6em;
+      padding-top: 0em;
+  }
+
+  .small-line{
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    width:10%;
+}
