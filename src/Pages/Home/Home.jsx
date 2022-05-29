@@ -284,6 +284,112 @@ const Home = () => {
                 </div>
             </section>
 
+            <section className="contact-bkg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-1"></div>
+                        <div className="col-md-5">
+                            <div className="contact-sideA">
+                                <h2>We’d love to hear from you!
+                                    Give us call, send us a message?</h2>
+                            </div>
+                        </div>
+                        <div className="col-md-5">
+                            <div className="contact-sideB">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.9995298252666!2d3.3471214!3d6.6469779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1653858661963!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div className="col-md-1"></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section className="faq-section">
+                <div className="container faq-place">
+                    <center>
+                        <h1 className="faqhText">FREQUENTLY ASK QUESTIONS</h1>
+                        <hr className="small-line" />
+                    </center>
+                    <div className="row">
+                        <div className="col-md-2"></div>
+                        <div className="col-md-8 top-row-col-six">
+                            <p>
+                                Our Frequently ASked Question Page explain to you
+                                in details most recent and relevant quetions asked
+                                by visitors. feel free to check all questions and
+                                posible answers for every questions. your contributions
+                                also will go a long way ask you kindly chat with our
+                                representatives VIA the live chat ...your questions
+                                will be added to our frequently asked questions
+                            </p>
+                        </div>
+                        <div className="col-md-2"></div>
+                    </div>
+
+                    <div className="row rowFaq">
+                        <div className="col-md-2"></div>
+                        <div className="col-md-8">
+                            <center>
+                                <h2 className="h2-heading">Frequently Asked Questions FAQ</h2>
+                                <p>Check out the answers below to see if it has been previously answered.</p>
+                            </center>
+
+                            <div className="faq-contents">
+                                <div className="faq1">
+                                    <h3 className="faq1htext">THIS IS QUESTION ONE</h3>
+                                    <div className="faq1ans">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="faq2">
+                                    <h3 className="faq1htext">THIS IS QUESTION TWO</h3>
+                                    <div className="faq1ans">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="faq3">
+                                    <h3 className="faq1htext">THIS IS QUESTION THREE</h3>
+                                    <div className="faq1ans">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div className="col-md-2"></div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
 
 
 
