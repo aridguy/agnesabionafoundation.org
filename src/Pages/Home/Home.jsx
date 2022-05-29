@@ -244,7 +244,7 @@ const Home = () => {
                     <div className="row drop-row w3-animate-bottom">
                         <div className="col-md-8">
                             <div className="vmContents">
-                                <img width="100 %" src={Donate} alt="donates" />
+                                <img width="100%" src={Donate} alt="donates" />
                             </div>
                         </div>
                         <div className="col-md-4">
