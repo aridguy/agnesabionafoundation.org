@@ -6,7 +6,7 @@
     background-image: url(../../Assets/istockphoto-469538141-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35em;
+    height: 40em;
     background-attachment: fixed;
 
 }
@@ -151,6 +151,8 @@
     background-color: #670842;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    padding-bottom: 43em;
 }
 
 .sect2-texta {

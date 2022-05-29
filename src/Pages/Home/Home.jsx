@@ -46,6 +46,7 @@ const Home = () => {
             </header>
 
             <main>
+            
                 <section className="landing">
                     <div className="container">
                         <div className="row">
@@ -70,12 +71,7 @@ const Home = () => {
                 </section>
             </main>
 
-            <section className="section2">
-                <div className="container-fluid p-5 section2 text-center ">
-                    <h1 className="w3-animate-left sect2-texta">Welcome To Agnes Abiona Foundation Non-Profit & NGO Organization</h1>
-                    <i className="sect2textb w3-animate-top">Contribute to the greater good make <b>Donations</b>today</i>
-                </div>
-            </section>
+            
 
 
             <section id="aboutUs" className="about-sect">
