@@ -50,17 +50,20 @@ const Home = () => {
                 <section className="landing">
                     <div className="container">
                         <div className="row">
+                        <div className="col-md-2"></div>
                             <div className="col-md-8">
+                                <center>
                                 <div className="main-head-contents w3-animate-bottom">
-                                    <h1 className="hText">Agnes Abiona Foundation</h1>
-                                    <h2 className="st2">There Is One Relation Above All</h2>
-                                    <h2><b className="s-t">Relation of Humanity</b></h2>
-                                    <div className="lcare"><p className="lcare-text"></p></div>
-                                    <button className="btn btn-warning donate">Donate</button>
+                                <h1 className="hText">Agnes Abiona Foundation</h1>
+                                <h2 className="st2">There Is One Relation Above All</h2>
+                                <h2><b className="s-t">Relation of Humanity</b></h2>
+                                <div className="lcare"><p className="lcare-text"></p></div>
+                                <button className="btn btn-warning donate">Donate</button>
 
-                                </div>
                             </div>
-                            <div className="col-md-4">
+                                </center>
+                            </div>
+                            <div className="col-md-2">
                                 <p className="main-head-contents">
 
 
@@ -70,9 +73,6 @@ const Home = () => {
                     </div>
                 </section>
             </main>
-
-            
-
 
             <section id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
