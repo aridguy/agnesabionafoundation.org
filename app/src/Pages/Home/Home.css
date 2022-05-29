@@ -248,3 +248,67 @@
     border: none;
     width:10%;
 }
+
+.pad2{
+    padding-top: 8em;
+}
+.pad-down{
+    padding-top: 6em;
+}
+
+.learn2{
+    width: 50%;
+    height: 3em;
+    outline: none;
+    border: none;
+    box-shadow: none;
+   
+}
+
+.learn2:hover{
+    color: white;
+    background-color: #f5d612;
+    outline: none;
+    border: none;
+}
+
+
+/* help section */
+
+
+.help{
+    background-image: url(../../Assets/help-backs.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7em;
+    padding-bottom: 8em;
+        
+}
+
+.donate-today{
+    width: 15em;
+    height: 4em;
+    margin-top: 3em;
+}
+
+
+blockquote::before {
+    content: open-quote;
+  }
+  blockquote::after {
+    content: close-quote;
+  }
+  blockquote {
+    quotes: "“" "”" "‘" "’";
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+  }
+
+  .diamonds{
+      width: 10em;
+      padding-bottom: 2em;
+  }
