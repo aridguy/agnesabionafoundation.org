@@ -296,7 +296,6 @@ const Home = () => {
                         </div>
                         <div className="col-md-5">
                             <div className="contact-sideB">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.9995298252666!2d3.3471214!3d6.6469779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1653858661963!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div className="col-md-1"></div>
