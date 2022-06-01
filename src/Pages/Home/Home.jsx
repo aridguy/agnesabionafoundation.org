@@ -7,12 +7,12 @@ import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 
+
+
 import "./Home.css";
 
 const Home = () => {
-    const goAbout = () => {
-
-    }
+    
     return (
         <div>
 
@@ -34,7 +34,7 @@ const Home = () => {
 
                     <div className="nav-links">
                         <li>Home</li>
-                        <li onClick={goAbout} id="#aboutUs">About</li>
+                        <li id="#aboutUs">About</li>
                         <li>What We Do</li>
                         <li>Vision/Mission</li>
                         <li>Contact Us</li>
@@ -226,7 +226,7 @@ const Home = () => {
                             </div>
                             <center>
                                 <span>
-                                    <button className="btn btn-warning donate-today">Donate Today!</button>
+                                    <button className="btn btn-warning donate-today"><r className="fa fa-plus"></r> Donate Today!</button>
                                 </span>
                             </center>
                         </div>
@@ -284,24 +284,8 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="contact-bkg">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-1"></div>
-                        <div className="col-md-5">
-                            <div className="contact-sideA">
-                                <h2>We’d love to hear from you!
-                                    Give us call, send us a message?</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-5">
-                            <div className="contact-sideB">
-                            </div>
-                        </div>
-                        <div className="col-md-1"></div>
-                    </div>
-                </div>
-
+            <section className="testimonia">
+            
             </section>
 
             <section className="faq-section">
@@ -385,6 +369,50 @@ const Home = () => {
 
                 </div>
             </section>
+
+            <section className="contact-bkg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-1"></div>
+                        <div className="col-md-5">
+                            <div className="contact-sideA">
+                                <h2 className="sideAtext">We’d love to hear from you!
+                                    Give us call, send us a message?
+                                </h2>
+                            </div>
+                            <div className="conts">
+                                <b>Address</b> <br />
+                                <i>5 Adeyemi Alao Street, Community Oke-Ira, Ogba Lagos</i>
+                            </div>
+                            <div className="conts">
+                                <b>Email Us</b> <br />
+                                <i>agnesabionafoundation@gmail.com</i>
+                            </div>
+                            <div className="conts">
+                                <b>Phone Number</b><br />
+                                <i>+234 80 23105167, +234 80 23105167</i><br />
+                            </div>
+                            <div className="socialMedia conts">
+                                <p><b>FIND US ON SOCIAL MEDIA</b></p>
+                                <span className="fa fa-facebook"></span>
+                                <o className="fa fa-twitter"></o>
+                                <o className="fa fa-youtube"></o>
+                                <o className="fa fa-whatsapp"></o>
+                            </div>
+                        </div>
+                        <div className="col-md-5">
+                            <div className="contact-sideA">
+                               
+                            </div>
+                            <div>
+                            <iframe className="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.000480581726!2d3.3471213647713713!3d6.6468599451937695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1654099218173!5m2!1sen!2sng" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="theMap"></iframe>
+                            </div>
+                        </div>
+                        <div className="col-md-1"></div>
+                    </div>
+                </div>
+            </section>
+
 
 
 

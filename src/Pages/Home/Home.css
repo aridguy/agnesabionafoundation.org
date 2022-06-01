@@ -297,6 +297,10 @@
     width: 15em;
     height: 4em;
     margin-top: 3em;
+    color: white;
+}
+r{
+    color: white;
 }
 
 
@@ -353,7 +357,6 @@ blockquote::before {
 
 .faq-section{
     background-color: #ffffff;
-    height: 15em;
 }
 
 .faqhText{
@@ -388,5 +391,46 @@ blockquote::before {
 /* contact secon down here */
 
 .contact-bkg{
-    background-color: red;
+    background-color: rgb(250, 248, 248);
+    padding-top: 5em;
+}
+.sideAtext{
+    font-weight: bolder;
+    color: orange;
+}
+
+.conts{
+    padding-top: 2em;
+}
+
+.conts > b{
+    text-transform: uppercase;
+}
+.conts >span{
+    color:rgb(176, 174, 174);
+    font-size: 2em;
+    transition: 0.5s;
+}
+.conts > o{
+    margin-left: 1em;
+    color: rgb(176, 174, 174);
+    font-size: 2em;
+    transition: 1s;
+}
+/* hover for the media icons */
+.conts > .fa-twitter:hover{
+    color: rgb(22, 205, 225);
+}
+.conts > .fa-facebook:hover{
+    color: rgb(22, 144, 225);
+}
+.conts > .fa-youtube:hover{
+    color: rgb(223, 47, 12);
+}
+.conts > .fa-whatsapp:hover{
+    color: rgb(14, 218, 102);
+}
+.maps{
+    border: none;
+    margin-top: 2em;
 }
