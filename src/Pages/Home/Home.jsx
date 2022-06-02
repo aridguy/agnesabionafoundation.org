@@ -461,10 +461,6 @@ const Home = () => {
 
             </Modal>
 
-
-
-
-
         </div>
 
 
