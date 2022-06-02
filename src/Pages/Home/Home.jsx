@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // import { Link } from "react-router-dom";
 import Logo1 from "../../Assets/Logo1.png";
@@ -7,12 +7,47 @@ import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 
+import Modal from 'react-modal';
+// import Carousel from 'react-bootstrap/Carousel';
+
+
+
 
 
 import "./Home.css";
 
+
 const Home = () => {
-    
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            width: '50%',
+            height: '60%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            border: 'none',
+        },
+    };
+
+    let subtitle;
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+        setIsOpen(true);
+    }
+
+    const afterOpenModal = () => {
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#f00';
+    }
+
+    const closeModal = () => {
+        setIsOpen(false);
+    }
+
     return (
         <div>
 
@@ -284,9 +319,6 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="testimonia">
-            
-            </section>
 
             <section className="faq-section">
                 <div className="container faq-place">
@@ -399,13 +431,14 @@ const Home = () => {
                                 <o className="fa fa-youtube"></o>
                                 <o className="fa fa-whatsapp"></o>
                             </div>
+                            <button onClick={openModal} className="btn btn-warning mt-5 text-white">Contact Us</button>
                         </div>
                         <div className="col-md-5">
                             <div className="contact-sideA">
-                               
+
                             </div>
                             <div>
-                            <iframe className="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.000480581726!2d3.3471213647713713!3d6.6468599451937695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1654099218173!5m2!1sen!2sng" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="theMap"></iframe>
+                                <iframe className="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.000480581726!2d3.3471213647713713!3d6.6468599451937695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1654099218173!5m2!1sen!2sng" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="theMap"></iframe>
                             </div>
                         </div>
                         <div className="col-md-1"></div>
@@ -413,19 +446,40 @@ const Home = () => {
                 </div>
             </section>
 
+            <Modal
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                style={customStyles}
+                contentLabel="Example Modal"
+            >
+                <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Leave Us A Message.</h2>
+                <button onClick={closeModal}>X</button>
+                <div>
+                    <h1>FIND US ON SOCIAL MEDIA</h1>
+                </div>
 
-
-
-
-
-
-
+            </Modal>
 
 
 
 
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     );
 }
 

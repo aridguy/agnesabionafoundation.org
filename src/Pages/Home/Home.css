@@ -356,7 +356,7 @@ blockquote::before {
 /* FREQUENTLY ASKED QUESTION SECTION */
 
 .faq-section{
-    background-color: #ffffff;
+    background-color: #fafafa;
 }
 
 .faqhText{
@@ -433,4 +433,36 @@ blockquote::before {
 .maps{
     border: none;
     margin-top: 2em;
+}
+
+/* TESTIMONIALS */
+.line2{
+    background-color: white;
+    }
+.testimonials{
+    background-image: url(../../Assets/beth-tate-188125.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20em;
+}
+
+.testimonilsHeadText{
+    font-weight: bolder;
+    color: white;
+}
+t{
+    color: orange;
+}
+center > b{
+    color: white;
+}
+
+/* contact second level for modificatuons */
+
+.lowerContact{
+    padding-top: 8em;
+}
+
+.theName, .theEmail{
+    display: inline-flex;
 }
