@@ -478,7 +478,7 @@ const Home = () => {
 
 
 
-            <div class="footer container-fluid p-5 bg-dark text-white">
+            <div class="footer container-fluid p-5 text-white main-foot-wrap">
                 <div className="row">
                     <div className="col-md-3">
                         <b>OUR COMPANY</b>
@@ -515,6 +515,16 @@ const Home = () => {
                     <div className="col-md-1"></div>
                 </div>
             </div>
+
+            <section className="footDark">
+                <div className="container-fluid darkBg">
+                    <div className="row">
+                        <div className="col-md-12 text-center">
+                            <p className="text-white pt-4">&copy; 2022, All right reserved <i className="linkSite">www.agnesabionafoundation.orgs</i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 

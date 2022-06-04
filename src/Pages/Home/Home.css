@@ -477,6 +477,15 @@ center > b{
     font-weight: bolder;
 }
 
+
+
+/* main footer wrapepr */
+
+.main-foot-wrap{
+    height: 28em;
+    background-color: rgb(6, 4, 1);
+}
+
 .newsletters{
     display: inline-flex;
     width: 100%;
@@ -490,4 +499,9 @@ center > b{
 
 .nletter{
     color: rgb(136, 7, 7);
+}
+
+.darkBg{
+    background-color: rgb(0, 0, 0);
+    height: 5em;
 }
