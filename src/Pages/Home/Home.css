@@ -46,11 +46,12 @@
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
+    cursor: pointer;
 }
 
-.nav>.nav-links>li:hover {
+/* .nav>.nav-links>li:hover {
     background-color: rgba(252, 241, 241, 0.3);
-}
+} */
 
 .nav>#nav-check {
     display: none;
@@ -393,6 +394,7 @@ blockquote::before {
 .contact-bkg{
     background-color: rgb(250, 248, 248);
     padding-top: 5em;
+    padding-bottom: 5em;
 }
 .sideAtext{
     font-weight: bolder;
@@ -465,4 +467,27 @@ center > b{
 
 .theName, .theEmail{
     display: inline-flex;
+}
+
+.closeModalss{
+    border: none;
+    outline: none;
+    color: orange;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.newsletters{
+    display: inline-flex;
+    width: 100%;
+}
+
+.nLetterBtn{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.nletter{
+    color: rgb(136, 7, 7);
 }

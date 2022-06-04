@@ -454,26 +454,71 @@ const Home = () => {
                 contentLabel="Example Modal"
             >
                 <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Leave Us A Message.</h2>
-                <button onClick={closeModal}>X</button>
+                <button className="closeModalss" onClick={closeModal}>X</button>
                 <div>
-                    <h1>FIND US ON SOCIAL MEDIA</h1>
+                    <div className="container">
+                        <div className="row rowModal">
+                            <div className="col-md-2"></div>
+                            <div className="col-md-8">
+                                <p align="justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div className="col-md-2"></div>
+                        </div>
+                    </div>
                 </div>
 
             </Modal>
 
+
+
+            <div class="footer container-fluid p-5 bg-dark text-white">
+                <div className="row">
+                    <div className="col-md-3">
+                        <b>OUR COMPANY</b>
+                        <p className="text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            olor sit amet, consectetur adipisicing elit, sed do eiusmodolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod
+                        </p>
+                    </div>
+                    <div className="col-md-2">
+                        <b>GENERAL</b>
+                        <p>License Terms</p>
+                        <p>privacy Policy</p>
+                        <p>Terms & conditions</p>
+                        <p>Refund Policy</p>
+                    </div>
+                    <div className="col-md-2">
+                        <b>EXPLORE</b>
+                        <p>Galery</p>
+                        <p>Events</p>
+                        <p>Nonprofit</p>
+
+                    </div>
+                    <div className="col-md-4">
+                    <b>NEWSLETTER</b>
+                        <form>
+                            <div className="newsletters">
+                                <input className="form-control nletter" type="email" name="email" placeholder="Enter your emails" />
+                                <button className="btn btn-warning nLetterBtn">SUBMIT <i class="fa fa-send-o"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div className="col-md-1"></div>
+                </div>
+            </div>
+
+
+
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     );
