@@ -18,6 +18,14 @@ import "./Home.css";
 
 
 const Home = () => {
+
+
+
+
+
+
+
+
     const customStyles = {
         content: {
             top: '50%',
@@ -47,6 +55,7 @@ const Home = () => {
     const closeModal = () => {
         setIsOpen(false);
     }
+
 
     return (
         <div>
@@ -520,7 +529,7 @@ const Home = () => {
                 <div className="container-fluid darkBg">
                     <div className="row">
                         <div className="col-md-12 text-center">
-                            <p className="text-white pt-4">&copy; 2022, All right reserved <i className="linkSite">www.agnesabionafoundation.orgs</i></p>
+                            <p className="text-white pt-4">&copy; 2022, All right reserved <i className="linkSite">www.agnesabionafoundation.org</i></p>
                         </div>
                     </div>
                 </div>
