@@ -10,21 +10,12 @@ import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 import Modal from 'react-modal';
 // import Carousel from 'react-bootstrap/Carousel';
 
-
-
-
-
 import "./Home.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
-
-
-
-
-
-
-
 
     const customStyles = {
         content: {
@@ -56,9 +47,16 @@ const Home = () => {
         setIsOpen(false);
     }
 
+    toast("welcome to Agnes Abiona Foundation");
+
+    const NewsletterVerify = () => {
+        let nlForm = document.getElementById("nletterForm").value;
+        toast(nlForm);
+    }
 
     return (
         <div>
+            <ToastContainer />
 
             <header>
                 <div className="nav">
@@ -513,11 +511,11 @@ const Home = () => {
 
                     </div>
                     <div className="col-md-4">
-                    <b>NEWSLETTER</b>
+                        <b>NEWSLETTER</b>
                         <form>
                             <div className="newsletters">
-                                <input className="form-control nletter" type="email" name="email" placeholder="Enter your emails" />
-                                <button className="btn btn-warning nLetterBtn">SUBMIT <i class="fa fa-send-o"></i></button>
+                                <input id="nletterForm" required className="form-control nletter" type="email" name="email" placeholder="Enter your emails" />
+                                <button onClick={NewsletterVerify} className="btn btn-warning nLetterBtn">SUBMIT <i class="fa fa-send-o"></i></button>
                             </div>
                         </form>
                     </div>
