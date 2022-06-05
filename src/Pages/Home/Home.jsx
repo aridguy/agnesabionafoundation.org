@@ -132,8 +132,33 @@ const Home = () => {
                                 <button className="btn btn-warning btn-block">Explore</button>
                             </div>
                         </div>
-                        <div className="col-md-4 sectwoB"></div>
-                        <div className="col-md-4 sectwoC"></div>
+                        <div className="col-md-4 sectwoB">
+                            <div id="sect2textOnHover">
+                                <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
+                                <p className="text-white" id="sect2bdtext">the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+
+                                </p>
+                                <button className="btn btn-warning btn-block">Explore</button>
+                            </div>
+                        </div>
+                        <div className="col-md-4 sectwoC">
+                        <div id="sect2textOnHover">
+                        <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
+                        <p className="text-white" id="sect2bdtext">the name of the boy i was talking about is idpwu
+                            the name of the boy i was talking about is idpwu
+                            the name of the boy i was talking about is idpwu
+                            the name of the boy i was talking about is idpwu
+                            the name of the boy i was talking about is idpwu
+                            the name of the boy i was talking about is idpwu
+                        </p>
+                        <button className="btn btn-warning btn-block">Explore</button>
+                    </div>
+                        </div>
                     </div>
                 </div>
             </section>
