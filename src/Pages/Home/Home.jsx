@@ -169,10 +169,11 @@ const Home = () => {
                         <div className="col-md-12">
                             <div>
                                 <center>
+                                <p></p>
                                     <h1 className="dabtTitle text-warning">ABOUT US</h1>
                                     <hr className="small-line" />
                                 </center>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                     <div className="row">
