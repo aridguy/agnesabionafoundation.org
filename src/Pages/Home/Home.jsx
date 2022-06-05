@@ -121,43 +121,42 @@ const Home = () => {
                         <div className="col-md-4 sectwoA">
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
-                                <p className="text-white" id="sect2bdtext">the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-
+                                <p className="text-white" id="sect2bdtext">
+                                    Podcasting operational change management inside of workflows
+                                    to establish a framework. Taking seamless key performance
+                                    indicators offline to maximise the long tail. management
+                                    inside of workflows to establish a framework.
+                                    Taking seamless key performance
                                 </p>
-                                <button className="btn btn-warning btn-block">Explore</button>
+                                <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
                         </div>
                         <div className="col-md-4 sectwoB">
                             <div id="sect2textOnHover">
-                                <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
-                                <p className="text-white" id="sect2bdtext">the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-                                    the name of the boy i was talking about is idpwu
-
+                                <h1 className="text-white" id="secttwoHead">Give Scholarships</h1>
+                                <p className="text-white" id="sect2bdtext">
+                                Podcasting operational change management inside of workflows 
+                                to establish a framework. Taking seamless key performance 
+                                indicators offline to maximise the long tail. 
+                                management inside of workflows to establish a framework. 
+                                Taking seamless key performance
                                 </p>
-                                <button className="btn btn-warning btn-block">Explore</button>
+                                <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
                         </div>
                         <div className="col-md-4 sectwoC">
-                        <div id="sect2textOnHover">
-                        <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
-                        <p className="text-white" id="sect2bdtext">the name of the boy i was talking about is idpwu
-                            the name of the boy i was talking about is idpwu
-                            the name of the boy i was talking about is idpwu
-                            the name of the boy i was talking about is idpwu
-                            the name of the boy i was talking about is idpwu
-                            the name of the boy i was talking about is idpwu
-                        </p>
-                        <button className="btn btn-warning btn-block">Explore</button>
-                    </div>
+                            <div id="sect2textOnHover">
+                                <h1 className="text-white" id="secttwoHead">Send Donations</h1>
+                                <p className="text-white" id="sect2bdtext">
+                                Podcasting operational change management inside 
+                                of workflows to establish a framework. 
+                                Taking seamless key performance indicators 
+                                offline to maximise the long tail. management 
+                                inside of workflows to establish a framework. 
+                                Taking seamless key performance
+                                </p>
+                                <button className="btn btn-lg btn-warning bts">Explore</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,7 +165,7 @@ const Home = () => {
 
             <section id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
-                    <div className="row row1">
+                    <div className="row row1 data-mdb-animation-on-scroll=repeat wow animated fadeInLeft">
                         <div className="col-md-12">
                             <div>
                                 <center>
@@ -457,7 +456,7 @@ const Home = () => {
 
             <section className="contact-bkg">
                 <div className="container">
-                    <div className="row">
+                    <div className="row wow fadeInRight animated">
                         <div className="col-md-1"></div>
                         <div className="col-md-5">
                             <div className="contact-sideA">

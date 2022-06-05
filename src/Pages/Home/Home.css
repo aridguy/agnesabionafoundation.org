@@ -124,25 +124,36 @@
 .sectwoA{
     width: 100%;
     background-color: #670842;
-    height: 30em;
+    height: 27em;
 }
 .sectwoB{
     width: 100%;
-    background-color: #670842;
-    height: 30em;
+    background-color: #000000;
+    height: 27em;
 }
 .sectwoC{
     width: 100%;
-    background-color: #670842;
-    height: 30em;
+    background-color: #d55342;
+    height: 27em;
+}
+
+.bts{
+    width: 10em;
+    color: white;
+}
+.bts:hover{
+    background-color: #000000;
+    color: white;
+    border: none;
+    
 }
 
 .sectwoA:hover{
     width: 100%;
     background-color: #a2307649;
-    background-image: url(../../Assets/sect2/Feeding-1.jpg);
+    background-image: url(../../Assets/sect2/original.png);
     opacity: 0.75;
-    height: 30em;
+    
 }
 
 .sectwoA:hover #secttwoHead{
