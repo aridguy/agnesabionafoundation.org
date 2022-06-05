@@ -112,11 +112,40 @@
 
 }
 
+/* section 2extra under the landing page */
+
+.sectwoA, .sectwoB, .sectwoC{
+    width: 100%;
+    padding: 5em;
+    padding-top: 6em;
+}
+
+.sectwoA{
+    width: 100%;
+    background-color: #670842;
+    height: 30em;
+}
+
+.sectwoA:hover{
+    width: 100%;
+    background-color: #a2307649;
+    background-image: url(../../Assets/sect2/children-hungry.jpg);
+    opacity: 0.75;;
+    height: 30em;
+}
+
+.sectwoA:hover #secttwoHead{
+    color: white;
+}
+
+.secttwoHead{
+    font-weight: bolder;
+}
+
 /* my customes starts here */
 
 .brand {
     width: 60px;
-
 }
 
 .donate {

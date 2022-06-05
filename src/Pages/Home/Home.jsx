@@ -108,15 +108,36 @@ const Home = () => {
                                 </center>
                             </div>
                             <div className="col-md-2">
-                                <p className="main-head-contents">
-
-
-                                </p>
+                                <p className="main-head-contents"></p>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
+
+            <section className="sec2">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-4 sectwoA">
+                            <div id="sect2textOnHover">
+                                <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
+                                <p className="text-white" id="sect2bdtext">the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+                                    the name of the boy i was talking about is idpwu
+
+                                </p>
+                                <button className="btn btn-warning btn-block">Explore</button>
+                            </div>
+                        </div>
+                        <div className="col-md-4 sectwoB"></div>
+                        <div className="col-md-4 sectwoC"></div>
+                    </div>
+                </div>
+            </section>
+
 
             <section id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
