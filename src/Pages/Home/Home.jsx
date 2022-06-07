@@ -7,7 +7,9 @@ import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 
-import { useEffect } from "react";
+import { BrowserRouter as Link } from "react-router-dom";
+
+// import { useEffect } from "react";
 
 import Modal from 'react-modal';
 // import Carousel from 'react-bootstrap/Carousel';
@@ -64,6 +66,11 @@ const Home = () => {
         toast(nlForm);
     }
 
+    // FOR SECTION NAVIGATIONS
+    const goContact = () =>{
+        
+    }
+
 
     return (
         <div>
@@ -90,7 +97,7 @@ const Home = () => {
                         <li id="#aboutUs">About</li>
                         <li>What We Do</li>
                         <li>Vision/Mission</li>
-                        <li>Contact Us</li>
+                        <li><Link to="#contact">Contact Us</Link></li>
                         <li>Faq</li>
                         <li>
                             <button className="btn btn-warning donate">Donate</button>
@@ -255,7 +262,7 @@ const Home = () => {
 
 
             <section className="section3">
-                <div className="container">
+                <div className="container animated wow fadeInRight" data-wow-offset="300" data-wow-duration="3s">
                     <center>
                         <h1 id="whatwedo">WHAT WE DO</h1>
                         <hr className="small-line" />
@@ -463,7 +470,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="contact-bkg">
+            <section className="contact-bkg" id="contact">
                 <div className="container">
                     <div className="row wow fadeInRight animated">
                         <div className="col-md-1"></div>
@@ -483,7 +490,7 @@ const Home = () => {
                             </div>
                             <div className="conts">
                                 <b>Phone Number</b><br />
-                                <i>+234 80 23105167, +234 80 23105167</i><br />
+                                <i>+2348063306463, +2348103221622</i><br />
                             </div>
                             <div className="socialMedia conts">
                                 <p><b>FIND US ON SOCIAL MEDIA</b></p>
