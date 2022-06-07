@@ -67,9 +67,9 @@ const Home = () => {
     }
 
     // FOR SECTION NAVIGATIONS
-    const goContact = () => {
+    // const goContact = () => {
 
-    }
+    // }
 
 
     return (
