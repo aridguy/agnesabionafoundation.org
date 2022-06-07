@@ -7,6 +7,8 @@ import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 
+import { useEffect } from "react";
+
 import Modal from 'react-modal';
 // import Carousel from 'react-bootstrap/Carousel';
 
@@ -16,6 +18,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
+    // const [matches, setMatches] = useState(
+    //     window.matchMedia("(min-width: 1080px)").matches
+    //   )
+    
+    //   useEffect(() => {
+    //     window
+    //     .matchMedia("(min-width: 1080px)")
+    //     .addEventListener('change', e => setMatches( e.matches ));
+    //   }, []);
 
     const customStyles = {
         content: {
@@ -29,6 +40,7 @@ const Home = () => {
             transform: 'translate(-50%, -50%)',
             border: 'none',
         },
+       
     };
 
     let subtitle;
@@ -47,12 +59,11 @@ const Home = () => {
         setIsOpen(false);
     }
 
-    toast("welcome to Agnes Abiona Foundation");
-
     const NewsletterVerify = () => {
         let nlForm = document.getElementById("nletterForm").value;
         toast(nlForm);
     }
+
 
     return (
         <div>
@@ -84,13 +95,10 @@ const Home = () => {
                         <li>
                             <button className="btn btn-warning donate">Donate</button>
                         </li>
-
                     </div>
                 </div>
             </header>
-
             <main>
-
                 <section className="landing">
                     <div className="container">
                         <div className="row">
@@ -135,11 +143,11 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">Give Scholarships</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                Podcasting operational change management inside of workflows 
-                                to establish a framework. Taking seamless key performance 
-                                indicators offline to maximise the long tail. 
-                                management inside of workflows to establish a framework. 
-                                Taking seamless key performance
+                                    Podcasting operational change management inside of workflows
+                                    to establish a framework. Taking seamless key performance
+                                    indicators offline to maximise the long tail.
+                                    management inside of workflows to establish a framework.
+                                    Taking seamless key performance
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -148,12 +156,12 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">Send Donations</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                Podcasting operational change management inside 
-                                of workflows to establish a framework. 
-                                Taking seamless key performance indicators 
-                                offline to maximise the long tail. management 
-                                inside of workflows to establish a framework. 
-                                Taking seamless key performance
+                                    Podcasting operational change management inside
+                                    of workflows to establish a framework.
+                                    Taking seamless key performance indicators
+                                    offline to maximise the long tail. management
+                                    inside of workflows to establish a framework.
+                                    Taking seamless key performance
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -169,11 +177,11 @@ const Home = () => {
                         <div className="col-md-12">
                             <div>
                                 <center>
-                                <p></p>
+                                    <p></p>
                                     <h1 className="dabtTitle text-warning">ABOUT US</h1>
                                     <hr className="small-line" />
                                 </center>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div className="row">
@@ -498,7 +506,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            <div >
+            
+        
             <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
@@ -509,25 +519,32 @@ const Home = () => {
                 <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Leave Us A Message.</h2>
                 <button className="closeModalss" onClick={closeModal}>X</button>
                 <div>
-                    <div className="container">
+                    <div>
                         <div className="row rowModal">
-                            <div className="col-md-2"></div>
-                            <div className="col-md-8">
-                                <p align="justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
+                            <div className="col-md-12">
+                                <div className="formModal">
+                                    <form>
+                                        <p>
+                                            <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
+                                        </p>
+                                        <p>
+                                            <input required type="text" name="email" placeholder="Email Address Here" className="form-control" />
+                                        </p>
+                                        <p>
+                                            <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
+                                        </p>
+
+                                        <button className="btn btn-block btn-warning">Send Now</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div className="col-md-2"></div>
                         </div>
                     </div>
                 </div>
 
             </Modal>
+        
+        </div>
 
 
 

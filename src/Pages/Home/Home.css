@@ -65,6 +65,21 @@
         top: 0px;
     }
 
+    /* Modal{
+        position: absolute;
+        inset: 50% auto auto 50%;
+        border: none;
+        background: rgb(255, 255, 255);
+        overflow: auto;
+        border-radius: 4px;
+        outline: none;
+        padding: 20px;
+        width: 92%;
+        height: 60%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    } */
+
     .nav>.nav-btn>label {
         display: inline-block;
         width: 50px;
@@ -149,6 +164,20 @@
 }
 
 .sectwoA:hover{
+    width: 100%;
+    background-color: #a2307649;
+    background-image: url(../../Assets/sect2/original.png);
+    opacity: 0.75;
+    
+}
+.sectwoB:hover{
+    width: 100%;
+    background-color: #a2307649;
+    background-image: url(../../Assets/sect2/original.png);
+    opacity: 0.75;
+    
+}
+.sectwoC:hover{
     width: 100%;
     background-color: #a2307649;
     background-image: url(../../Assets/sect2/original.png);
@@ -527,6 +556,8 @@ center > b{
     background-color: white;
     font-weight: bolder;
 }
+
+
 
 
 
