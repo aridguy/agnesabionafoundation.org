@@ -23,7 +23,7 @@ const Home = () => {
     // const [matches, setMatches] = useState(
     //     window.matchMedia("(min-width: 1080px)").matches
     //   )
-    
+
     //   useEffect(() => {
     //     window
     //     .matchMedia("(min-width: 1080px)")
@@ -42,7 +42,7 @@ const Home = () => {
             transform: 'translate(-50%, -50%)',
             border: 'none',
         },
-       
+
     };
 
     let subtitle;
@@ -67,8 +67,8 @@ const Home = () => {
     }
 
     // FOR SECTION NAVIGATIONS
-    const goContact = () =>{
-        
+    const goContact = () => {
+
     }
 
 
@@ -150,11 +150,11 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">Give Scholarships</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                    Podcasting operational change management inside of workflows
-                                    to establish a framework. Taking seamless key performance
-                                    indicators offline to maximise the long tail.
-                                    management inside of workflows to establish a framework.
-                                    Taking seamless key performance
+                                    We provides help for the needy and works towards the stability of
+                                    the society by give scholarship opportunities students who wish
+                                    to study but cannot afford it and helps them to study peacefully
+                                    without financial problems. Agnes Abiona Foundation provide various
+                                    types of scholarships for students even for those who want to study abroad.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -163,12 +163,9 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">Send Donations</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                    Podcasting operational change management inside
-                                    of workflows to establish a framework.
-                                    Taking seamless key performance indicators
-                                    offline to maximise the long tail. management
-                                    inside of workflows to establish a framework.
-                                    Taking seamless key performance
+                                    Agnes Abiona Founation is Nigerian non-profit organization crowdfunding/Donations platform
+                                    that allows people to donate money to help the poor and needy ranging from
+                                    Female Children, Adult Women and Elderly Citizens.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -176,7 +173,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
 
             <section id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
@@ -514,44 +510,44 @@ const Home = () => {
                 </div>
             </section>
             <div >
-            
-        
-            <Modal
-                isOpen={modalIsOpen}
-                onAfterOpen={afterOpenModal}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-            >
-                <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Leave Us A Message.</h2>
-                <button className="closeModalss" onClick={closeModal}>X</button>
-                <div>
-                    <div>
-                        <div className="row rowModal">
-                            <div className="col-md-12">
-                                <div className="formModal">
-                                    <form>
-                                        <p>
-                                            <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
-                                        </p>
-                                        <p>
-                                            <input required type="text" name="email" placeholder="Email Address Here" className="form-control" />
-                                        </p>
-                                        <p>
-                                            <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
-                                        </p>
 
-                                        <button className="btn btn-block btn-warning">Send Now</button>
-                                    </form>
+
+                <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+                >
+                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Leave Us A Message.</h2>
+                    <button className="closeModalss" onClick={closeModal}>X</button>
+                    <div>
+                        <div>
+                            <div className="row rowModal">
+                                <div className="col-md-12">
+                                    <div className="formModal">
+                                        <form>
+                                            <p>
+                                                <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
+                                            </p>
+                                            <p>
+                                                <input required type="text" name="email" placeholder="Email Address Here" className="form-control" />
+                                            </p>
+                                            <p>
+                                                <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
+                                            </p>
+
+                                            <button className="btn btn-block btn-warning">Send Now</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </Modal>
-        
-        </div>
+                </Modal>
+
+            </div>
 
 
 

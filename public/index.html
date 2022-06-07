@@ -46,6 +46,45 @@
   <title>Agnes Abiona Foundation</title>
 </head>
 
+
+<script>
+  var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?33087';
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = url;
+  var options = {
+"enabled":true,
+"chatButtonSetting":{
+    "backgroundColor":"#f2aa0d",
+    "ctaText":"Whatsapp",
+    "borderRadius":"50",
+    "marginLeft":"0",
+    "marginBottom":"50",
+    "marginRight":"50",
+    "position":"left"
+},
+"brandSetting":{
+    "brandName":"Agnes Abiona Foundation",
+    "brandSubTitle":"We'll reply within minuites",
+    "brandImg":"https://agnesabionafoundation.netlify.app/static/media/Logo1.ca039057c2b2b804fb6f.png",
+    "welcomeText":"Welcome to Agnes Abiona Foundation!\nKindly ontinue to chat with us and let us know \nhow we can help you today",
+    "messageText":"",
+    "backgroundColor":"#bc15a6",
+    "ctaText":"Chat Us Now",
+    "borderRadius":"50",
+    "autoShow":true,
+    "phoneNumber":"2348103221622"
+}
+};
+  s.onload = function() {
+      CreateWhatsappChatWidget(options);
+  };
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+</script>
+
+
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
