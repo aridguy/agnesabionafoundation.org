@@ -151,8 +151,7 @@ const Home = () => {
                                     We provides help for the needy and works towards the stability of
                                     the society by give scholarship opportunities students who wish
                                     to study but cannot afford it and helps them to study peacefully
-                                    without financial problems. Agnes Abiona Foundation provide various
-                                    types of scholarships for students even for those who want to study abroad.
+                                    without financial problems. 
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
