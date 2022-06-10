@@ -9,6 +9,8 @@ import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 
 import { BrowserRouter as Link } from "react-router-dom";
 
+import SideSocialIcons from "../../Components/SideSocialIcons";
+
 // import { useEffect } from "react";
 
 import Modal from 'react-modal';
@@ -20,6 +22,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Home = () => {
+
     // const [matches, setMatches] = useState(
     //     window.matchMedia("(min-width: 1080px)").matches
     //   )
@@ -72,6 +75,7 @@ const Home = () => {
 
     return (
         <div>
+            <SideSocialIcons />
             <ToastContainer />
 
             <header>
