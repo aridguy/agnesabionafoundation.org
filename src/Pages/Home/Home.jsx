@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // import { Link } from "react-router-dom";
 import Logo1 from "../../Assets/Logo1.png";
@@ -6,9 +6,6 @@ import AboutImg from "../../Assets/aboutImage.jpg";
 import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
-
-import { BrowserRouter as Link } from "react-router-dom";
-
 import SideSocialIcons from "../../Components/SideSocialIcons";
 
 // import { useEffect } from "react";
@@ -70,8 +67,42 @@ const Home = () => {
     }
 
     // FOR SECTION NAVIGATIONS
+    
+    const homeref = useRef("");
+    const aboutref = useRef("");
+    const whatwedoref = useRef("");
+    const visionmissionref = useRef("");
+    const contactref = useRef("");
+    const faqref = useRef("");
+
+    const [selectedNavLink, setselectedNavLink] = useState("");
+
+    useEffect(() =>{
+        if (selectedNavLink === 'home') {
+            homeref.current.scrollIntoView();
+          } ;
+          if (selectedNavLink === 'about') {
+            aboutref.current.scrollIntoView();
+          } 
+          if (selectedNavLink === 'faq') {
+            faqref.current.scrollIntoView();
+          }
+          if (selectedNavLink === 'contact us') {
+            contactref.current.scrollIntoView();
+          }
+          if (selectedNavLink === 'vision/Mission') {
+            visionmissionref.current.scrollIntoView();
+          }
+          if (selectedNavLink === 'what we do') {
+            whatwedoref.current.scrollIntoView();
+          }
 
 
+
+
+
+          setselectedNavLink("");
+    },  [selectedNavLink]);
 
     return (
         <div>
@@ -94,13 +125,13 @@ const Home = () => {
                         </label>
                     </div>
 
-                    <div className="nav-links">
-                        <li>Home</li>
-                        <li id="#aboutUs">About</li>
-                        <li>What We Do</li>
-                        <li>Vision/Mission</li>
-                        <li><Link to="#contact">Contact Us</Link></li>
-                        <li>Faq</li>
+                    <div className="nav-links navigationbar">
+                        <li onClick={() => setselectedNavLink("home")}>Home</li>
+                        <li onClick={() => setselectedNavLink("about")} id="#aboutUs">About</li>
+                        <li onClick={() => setselectedNavLink("what we do")}>What We Do</li>
+                        <li onClick={() => setselectedNavLink("vision/Mission")}>Vision/Mission</li>
+                        <li onClick={() => setselectedNavLink("contact us")}>Contact Us</li>
+                        <li onClick={() => setselectedNavLink("faq")}>Faq</li>
                         <li>
                             <button className="btn btn-warning donate">Donate</button>
                         </li>
@@ -108,7 +139,7 @@ const Home = () => {
                 </div>
             </header>
             <main>
-                <section className="landing">
+                <section ref={homeref} className="landing">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-2"></div>
@@ -175,7 +206,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="aboutUs" className="about-sect">
+            <section ref={aboutref} id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
                     <div className="row row1 data-mdb-animation-on-scroll=repeat wow animated fadeInLeft">
                         <div className="col-md-12">
@@ -258,7 +289,7 @@ const Home = () => {
             </section>
 
 
-            <section className="section3">
+            <section ref={whatwedoref} className="section3">
                 <div className="container animated wow fadeInRight" data-wow-offset="300" data-wow-duration="3s">
                     <center>
                         <h1 id="whatwedo">WHAT WE DO</h1>
@@ -335,10 +366,10 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="vision-mission">
+            <section ref={visionmissionref} className="vision-mission">
                 <div className="container">
                     <center>
-                        <h1 className="v-mText">VISION & MISSION <br /> STATEMENTS</h1>
+                        <h1 className="v-mText">VISION & MISSION STATEMENTS</h1>
                         <hr className="small-line" />
                     </center>
                     <div className="row drop-row w3-animate-bottom">
@@ -385,7 +416,7 @@ const Home = () => {
             </section>
 
 
-            <section className="faq-section">
+            <section ref={faqref} className="faq-section">
                 <div className="container faq-place">
                     <center>
                         <h1 className="faqhText">FREQUENTLY ASK QUESTIONS</h1>
@@ -467,7 +498,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="contact-bkg" id="contact">
+            <section ref={contactref} className="contact-bkg" id="contact">
                 <div className="container">
                     <div className="row wow fadeInRight animated">
                         <div className="col-md-1"></div>
