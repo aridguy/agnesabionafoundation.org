@@ -2,11 +2,6 @@
     margin-right: 70px;
 }
 
-
-
-
-
-
 /**** Social Boxes ****/
 
 .socialbox a {
@@ -58,4 +53,12 @@
     top: 200px;
     background: #088ecc;
 
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px)  {
+    .socialbox{
+        display: none;
+    }
 }

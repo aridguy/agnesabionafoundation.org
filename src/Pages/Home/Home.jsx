@@ -96,11 +96,6 @@ const Home = () => {
           if (selectedNavLink === 'what we do') {
             whatwedoref.current.scrollIntoView();
           }
-
-
-
-
-
           setselectedNavLink("");
     },  [selectedNavLink]);
 
