@@ -124,6 +124,7 @@ const Home = () => {
                         <li onClick={() => setselectedNavLink("home")}>Home</li>
                         <li onClick={() => setselectedNavLink("about")} id="#aboutUs">About</li>
                         <li onClick={() => setselectedNavLink("what we do")}>What We Do</li>
+                        <li>Gallery</li>
                         <li onClick={() => setselectedNavLink("vision/Mission")}>Vision/Mission</li>
                         <li onClick={() => setselectedNavLink("contact us")}>Contact Us</li>
                         <li onClick={() => setselectedNavLink("faq")}>Faq</li>
