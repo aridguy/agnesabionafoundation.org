@@ -20,6 +20,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
+   
+        
+
+  
+
     // const [matches, setMatches] = useState(
     //     window.matchMedia("(min-width: 1080px)").matches
     //   )
@@ -67,7 +72,7 @@ const Home = () => {
     }
 
     // FOR SECTION NAVIGATIONS
-    
+
     const homeref = useRef("");
     const aboutref = useRef("");
     const whatwedoref = useRef("");
@@ -77,27 +82,27 @@ const Home = () => {
 
     const [selectedNavLink, setselectedNavLink] = useState("");
 
-    useEffect(() =>{
+    useEffect(() => {
         if (selectedNavLink === 'home') {
             homeref.current.scrollIntoView();
-          } ;
-          if (selectedNavLink === 'about') {
+        };
+        if (selectedNavLink === 'about') {
             aboutref.current.scrollIntoView();
-          } 
-          if (selectedNavLink === 'faq') {
+        }
+        if (selectedNavLink === 'faq') {
             faqref.current.scrollIntoView();
-          }
-          if (selectedNavLink === 'contact us') {
+        }
+        if (selectedNavLink === 'contact us') {
             contactref.current.scrollIntoView();
-          }
-          if (selectedNavLink === 'vision/Mission') {
+        }
+        if (selectedNavLink === 'vision/Mission') {
             visionmissionref.current.scrollIntoView();
-          }
-          if (selectedNavLink === 'what we do') {
+        }
+        if (selectedNavLink === 'what we do') {
             whatwedoref.current.scrollIntoView();
-          }
-          setselectedNavLink("");
-    },  [selectedNavLink]);
+        }
+        setselectedNavLink("");
+    }, [selectedNavLink]);
 
     return (
         <div>
@@ -182,7 +187,7 @@ const Home = () => {
                                     We provides help for the needy and works towards the stability of
                                     the society by give scholarship opportunities students who wish
                                     to study but cannot afford it and helps them to study peacefully
-                                    without financial problems. 
+                                    without financial problems.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -415,13 +420,13 @@ const Home = () => {
             <section ref={faqref} className="faq-section">
                 <div className="container faq-place">
                     <center>
-                        <h1 className="faqhText">FREQUENTLY ASK QUESTIONS</h1>
+                        <h1 className="faqhText q1">FREQUENTLY ASK QUESTIONS</h1>
                         <hr className="small-line" />
                     </center>
                     <div className="row">
                         <div className="col-md-2"></div>
                         <div className="col-md-8 top-row-col-six">
-                            <p>
+                            <p className="q1txt">
                                 Our Frequently ASked Question Page explain to you
                                 in details most recent and relevant quetions asked
                                 by visitors. feel free to check all questions and
