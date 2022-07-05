@@ -124,7 +124,6 @@ const Home = () => {
                             <span></span>
                         </label>
                     </div>
-
                     <div className="nav-links navigationbar">
                         <li onClick={() => setselectedNavLink("home")}>Home</li>
                         <li onClick={() => setselectedNavLink("about")} id="#aboutUs">About</li>
