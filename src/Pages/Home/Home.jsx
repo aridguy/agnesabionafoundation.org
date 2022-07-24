@@ -20,21 +20,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
-
-
-
-
-
-    // const [matches, setMatches] = useState(
-    //     window.matchMedia("(min-width: 1080px)").matches
-    //   )
-
-    //   useEffect(() => {
-    //     window
-    //     .matchMedia("(min-width: 1080px)")
-    //     .addEventListener('change', e => setMatches( e.matches ));
-    //   }, []);
-
     const customStyles = {
         content: {
             top: '50%',
@@ -290,7 +275,7 @@ const Home = () => {
 
 
             <section ref={whatwedoref} className="section3">
-                <div className="container animated wow fadeInRight" data-wow-offset="300" data-wow-duration="3s">
+                <div className="container animated fadeInRight" data-wow-offset="300" data-wow-duration="3s">
                     <center>
                         <h1 id="whatwedo">WHAT WE DO</h1>
                         <hr className="small-line" />
@@ -388,8 +373,7 @@ const Home = () => {
                                 <hr className="small-line" />
                                 <i id="vis-texts">
                                     <cite>
-                                        "To bring hope to the hopeless and indigent women and children
-                                        in development nations"
+                                        "To give hope to the hopeless indigent women and vulnerable girls in developing nations."
                                     </cite>
                                 </i>
                             </div>
@@ -402,10 +386,9 @@ const Home = () => {
                                 <hr className="small-line" />
                                 <i id="vis-texts">
                                     <cite>
-                                        "Our mission is to provide support and mentoring for under
-                                        previleged girls and vulnerable women in
-                                        developing nations, who are marginalized or have
-                                        limited access to resources needed to unclock their full potentials"
+                                        "Our mission is to provide support and mentoring to vulnerable girls 
+                                        and indigent women in developing nations who are marginalized or have 
+                                        limited access to resources needed to unlock their full potentials."
                                     </cite>
                                 </i>
                             </div>
