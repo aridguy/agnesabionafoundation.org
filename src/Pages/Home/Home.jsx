@@ -20,10 +20,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 
-   
-        
 
-  
+
+
+
 
     // const [matches, setMatches] = useState(
     //     window.matchMedia("(min-width: 1080px)").matches
@@ -342,58 +342,9 @@ const Home = () => {
                 </div>
             </section>
 
-            <section ref={whatwedoref} className="section3">
-            <div className="container wow fadeInRight" data-wow-duration="0.1s">
-                <center>
-                    <h1 id="whatwedo">WHAT WE DO</h1>
-                    <hr className="small-line" />
-                    <div className="row">
-                        <div className="col-md-4">
-                            <div className="side1 backgs">
-                                <img src="https://img.icons8.com/glyph-neue/64/000000/donate.png" alt="iconic" />
-                                <p>
-                                    <b>Make Donations</b>
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br />
-                                    <p></p>
-                                    <i>Raise Fund Now</i>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="side1 backgs">
-                                <img src="https://img.icons8.com/glyph-neue/64/000000/cash-in-hand.png" alt="icon" />
-                                <p>
-                                    <b>Fundraising</b>
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br />
-                                    <p></p>
-                                    <i>Raise Fund Now</i>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="side1 backgs">
-                                <img src="https://img.icons8.com/glyph-neue/64/000000/welfare.png" alt="icon" />
-                                <p>
-                                    <b>Become a Volunteer</b>
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br />
-                                    <p></p>
-                                    <i>Raise Fund Now</i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </center>
-            </div>
-        </section>
+
+            <style>
+            </style>
 
             <section className="help">
                 <div className="container">
