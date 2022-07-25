@@ -7,6 +7,7 @@ import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
 import SideSocialIcons from "../../Components/SideSocialIcons";
+import Founder from "../../Assets/sect2/founder.png";
 
 // import { useEffect } from "react";
 
@@ -118,7 +119,7 @@ const Home = () => {
                         <li onClick={() => setselectedNavLink("contact us")}>Contact Us</li>
                         <li onClick={() => setselectedNavLink("faq")}>Faq</li>
                         <li>
-                            <button className="btn btn-warning donate">Donate</button>
+                            <button className="btn btn-warning donate">Volunteer</button>
                         </li>
                     </div>
                 </div>
@@ -153,7 +154,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-md-4 sectwoA">
                             <div id="sect2textOnHover">
-                                <h1 className="text-white" id="secttwoHead">Give Inspiration</h1>
+                                <h1 className="text-white" id="secttwoHead">VOCATIONAL SKILLS AND TRAINING</h1>
                                 <p className="text-white" id="sect2bdtext">
                                     Podcasting operational change management inside of workflows
                                     to establish a framework. Taking seamless key performance
@@ -166,7 +167,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-4 sectwoB">
                             <div id="sect2textOnHover">
-                                <h1 className="text-white" id="secttwoHead">Give Scholarships</h1>
+                                <h1 className="text-white" id="secttwoHead">EDUCATION SUPPORT</h1>
                                 <p className="text-white" id="sect2bdtext">
                                     We provides help for the needy and works towards the stability of
                                     the society by give scholarship opportunities students who wish
@@ -178,7 +179,7 @@ const Home = () => {
                         </div>
                         <div className="col-md-4 sectwoC">
                             <div id="sect2textOnHover">
-                                <h1 className="text-white" id="secttwoHead">Send Donations</h1>
+                                <h1 className="text-white" id="secttwoHead">LEADERSHIP TRAINING</h1>
                                 <p className="text-white" id="sect2bdtext">
                                     Agnes Abiona Founation is Nigerian non-profit organization crowdfunding/Donations platform
                                     that allows people to donate money to help the poor and needy ranging from
@@ -208,7 +209,7 @@ const Home = () => {
                         <div className="col-md-4">
                             <div className="contentsAbout1>">
                                 <div>
-                                    <img className="img-responsive" width="100%" src={AboutImg} alt="abt" />
+                                    <img className="img-responsive" width="100%" src={Founder} alt="abt" />
                                 </div>
                             </div>
                         </div>
@@ -217,58 +218,26 @@ const Home = () => {
                             <div className="contentsAbout2">
                                 <div>
                                     <h1 className="abtHead">THE AGNES ABIONA FOUNDATION</h1>
-                                    <p id="txtAbt">Charite is the world’s #1 fundraising site forcharitable causes. Raise money for over 1.5 million charities.</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <p id="txtAbt">
+                                        Founder and registered by ABIONA AGNES MAUTIN as an incorporated truestee in 2021, with its headquater in Lagos State. 
+                                        <b> (AAF)</b> is non-governmental, not for profit making and non-partisannand also not relifious organization. 
+                                        We are Commited to the enforcement of women and children right and attainment and equality development.
                                     </p>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                       Agnes Abiona Foundation seek and make Vision and reality for women and girls in Nigeria and other developingNations,
+                                       through, Education, Healthcare, Skill development and community participations.
+                                       We want Women to lead and participate in government systems, have decent Livelihood, income security and economy, and live free from violence.
+                                    </p>
+                                    <p>
+                                        Part of our strategy to achieve our aim is by workeing closely with organizsation 
+                                        to develop collaborative tools and opportunities for every women and girls
                                     </p>
 
-                                    <button className="btn btn-warning learn">Learn More About Us</button>
+                                    <a href="#contact" className="btn btn-warning learn">Contact Us</a>
 
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div className="row pad2">
-
-                        <div className="col-md-6">
-                            <div className="contentsAbout2">
-                                <div>
-                                    <h1 className="abtHead">WE ARE ALL ABOUT GIVING, SUPPORTING AND HELPING</h1>
-                                    <p id="txtAbt">Charite is the world’s #1 fundraising site forcharitable causes. Raise money for over 1.5 million charities.</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-
-                                    <button className="btn btn-warning learn2">Learn More About Us</button>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-4">
-                            <div className="contentsAbout1>">
-                                <div>
-                                    <img className="img-responsive" width="100%" src={AboutImg} alt="abt" />
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </section>
@@ -386,8 +355,8 @@ const Home = () => {
                                 <hr className="small-line" />
                                 <i id="vis-texts">
                                     <cite>
-                                        "Our mission is to provide support and mentoring to vulnerable girls 
-                                        and indigent women in developing nations who are marginalized or have 
+                                        "Our mission is to provide support and mentoring to vulnerable girls
+                                        and indigent women in developing nations who are marginalized or have
                                         limited access to resources needed to unlock their full potentials."
                                     </cite>
                                 </i>
