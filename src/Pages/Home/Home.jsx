@@ -458,7 +458,7 @@ const Home = () => {
                                                 <input required type="text" name="email" placeholder="Email Address Here" className="form-control" />
                                             </p>
                                             <p>
-                                                <input required type="text" name="name" placeholder="Enter Name here" className="form-control" />
+                                                <textarea className="form-control" placeholder="leave your message here"></textarea>
                                             </p>
 
                                             <button className="btn btn-block btn-warning">Send Now</button>
