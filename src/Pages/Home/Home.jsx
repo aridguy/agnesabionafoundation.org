@@ -156,11 +156,10 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">VOCATIONAL SKILLS AND TRAINING</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                    Podcasting operational change management inside of workflows
-                                    to establish a framework. Taking seamless key performance
-                                    indicators offline to maximise the long tail. management
-                                    inside of workflows to establish a framework.
-                                    Taking seamless key performance
+                                Vocational learning opportunities play a critical role in skill 
+                                development and employability. The importance of vocational 
+                                development can largely be summed up. Agnes Abiona Foundation sponsor 
+                                young girls in different vocational schools.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -169,10 +168,9 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">EDUCATION SUPPORT</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                    We provides help for the needy and works towards the stability of
-                                    the society by give scholarship opportunities students who wish
-                                    to study but cannot afford it and helps them to study peacefully
-                                    without financial problems.
+                                    We provides free educational supports for yound female
+                                    students to discover their individual academic skills & to become self-sufficient & life-long
+                                    so as to study peacefully without financial problems.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -181,9 +179,9 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">LEADERSHIP TRAINING</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                    Agnes Abiona Founation is Nigerian non-profit organization crowdfunding/Donations platform
-                                    that allows people to donate money to help the poor and needy ranging from
-                                    Female Children, Adult Women and Elderly Citizens.
+                                Agnes Abiona Foundation arrange leaddership training programs for young females 
+                                which are designed to help them learn new leadership techniques 
+                                so as to be able to participate in government systems. 
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -224,7 +222,7 @@ const Home = () => {
                                         We are Commited to the enforcement of women and children right and attainment and equality development.
                                     </p>
                                     <p>
-                                        Agnes Abiona Foundation seek and make Vision and reality for women and girls in Nigeria and other developingNations,
+                                        Agnes Abiona Foundation seek and make Vision and reality for women and girls in Nigeria and other developing Nations,
                                         through, Education, Healthcare, Skill development and community participations.
                                         We want Women to lead and participate in government systems, have decent Livelihood, income security and economy, and live free from violence.
                                     </p>
@@ -472,8 +470,6 @@ const Home = () => {
                 </Modal>
 
             </div>
-
-
 
             <div class="footer container-fluid p-5 text-white main-foot-wrap">
                 <div className="row">
