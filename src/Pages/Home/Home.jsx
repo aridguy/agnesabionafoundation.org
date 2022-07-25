@@ -117,7 +117,7 @@ const Home = () => {
                         <li>Gallery</li>
                         <li onClick={() => setselectedNavLink("vision/Mission")}>Vision/Mission</li>
                         <li onClick={() => setselectedNavLink("contact us")}>Contact Us</li>
-                        <li onClick={() => setselectedNavLink("faq")}>Faq</li>
+                       
                         <li>
                             <button className="btn btn-warning donate">Volunteer</button>
                         </li>
@@ -219,23 +219,39 @@ const Home = () => {
                                 <div>
                                     <h1 className="abtHead">THE AGNES ABIONA FOUNDATION</h1>
                                     <p id="txtAbt">
-                                        Founder and registered by ABIONA AGNES MAUTIN as an incorporated truestee in 2021, with its headquater in Lagos State. 
-                                        <b> (AAF)</b> is non-governmental, not for profit making and non-partisannand also not relifious organization. 
+                                        Founder and registered by ABIONA AGNES MAUTIN as an incorporated truestee in 2021, with its headquater in Lagos State.
+                                        <b> (AAF)</b> is non-governmental, not for profit making and non-partisannand also not relifious organization.
                                         We are Commited to the enforcement of women and children right and attainment and equality development.
                                     </p>
                                     <p>
-                                       Agnes Abiona Foundation seek and make Vision and reality for women and girls in Nigeria and other developingNations,
-                                       through, Education, Healthcare, Skill development and community participations.
-                                       We want Women to lead and participate in government systems, have decent Livelihood, income security and economy, and live free from violence.
+                                        Agnes Abiona Foundation seek and make Vision and reality for women and girls in Nigeria and other developingNations,
+                                        through, Education, Healthcare, Skill development and community participations.
+                                        We want Women to lead and participate in government systems, have decent Livelihood, income security and economy, and live free from violence.
                                     </p>
                                     <p>
-                                        Part of our strategy to achieve our aim is by workeing closely with organizsation 
+                                        Part of our strategy to achieve our aim is by workeing closely with organizsation
                                         to develop collaborative tools and opportunities for every women and girls
                                     </p>
 
                                     <a href="#contact" className="btn btn-warning learn">Contact Us</a>
 
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="whySect pt-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="whyDiv">
+                                <h1 id="whyHead">WHY EMPOWERMENT OF GIRLS AND YOUNG WOMEN?</h1>
+                                <p id="whyText">"In Nigeria, the United Nations posits that women and girls 
+                                make up more than half of population but still do not have sufficient 
+                                access or opportunities to realize their full potentials as agents of change 
+                                who can provide solutions to most of the country’s most pressing issues."</p>
                             </div>
                         </div>
                     </div>
@@ -372,87 +388,7 @@ const Home = () => {
             </section>
 
 
-            <section ref={faqref} className="faq-section">
-                <div className="container faq-place">
-                    <center>
-                        <h1 className="faqhText q1">FREQUENTLY ASK QUESTIONS</h1>
-                        <hr className="small-line" />
-                    </center>
-                    <div className="row">
-                        <div className="col-md-2"></div>
-                        <div className="col-md-8 top-row-col-six">
-                            <p className="q1txt">
-                                Our Frequently ASked Question Page explain to you
-                                in details most recent and relevant quetions asked
-                                by visitors. feel free to check all questions and
-                                posible answers for every questions. your contributions
-                                also will go a long way ask you kindly chat with our
-                                representatives VIA the live chat ...your questions
-                                will be added to our frequently asked questions
-                            </p>
-                        </div>
-                        <div className="col-md-2"></div>
-                    </div>
-
-                    <div className="row rowFaq">
-                        <div className="col-md-2"></div>
-                        <div className="col-md-8">
-                            <center>
-                                <h2 className="h2-heading">Frequently Asked Questions FAQ</h2>
-                                <p>Check out the answers below to see if it has been previously answered.</p>
-                            </center>
-
-                            <div className="faq-contents">
-                                <div className="faq1">
-                                    <h3 className="faq1htext">THIS IS QUESTION ONE</h3>
-                                    <div className="faq1ans">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="faq2">
-                                    <h3 className="faq1htext">THIS IS QUESTION TWO</h3>
-                                    <div className="faq1ans">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="faq3">
-                                    <h3 className="faq1htext">THIS IS QUESTION THREE</h3>
-                                    <div className="faq1ans">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div className="col-md-2"></div>
-                    </div>
-
-                </div>
-            </section>
+            
 
             <section ref={contactref} className="contact-bkg" id="contact">
                 <div className="container">
