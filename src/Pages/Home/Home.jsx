@@ -189,7 +189,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
+            
             <section ref={aboutref} id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
                     <div className="row row1 data-mdb-animation-on-scroll=repeat wow animated fadeInLeft">
