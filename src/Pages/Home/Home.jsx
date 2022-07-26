@@ -189,7 +189,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
+
             <section ref={aboutref} id="aboutUs" className="about-sect">
                 <div className="container w3-animate-left">
                     <div className="row row1 data-mdb-animation-on-scroll=repeat wow animated fadeInLeft">
@@ -246,10 +246,10 @@ const Home = () => {
                         <div className="col-md-12">
                             <div className="whyDiv">
                                 <h1 id="whyHead">WHY EMPOWERMENT OF GIRLS AND YOUNG WOMEN?</h1>
-                                <p id="whyText">"In Nigeria, the United Nations posits that women and girls 
+                                <p id="whyText"><i>"In Nigeria, the United Nations posits that women and girls 
                                 make up more than half of population but still do not have sufficient 
                                 access or opportunities to realize their full potentials as agents of change 
-                                who can provide solutions to most of the country’s most pressing issues."</p>
+                                who can provide solutions to most of the country’s most pressing issues."</i></p>
                             </div>
                         </div>
                     </div>
