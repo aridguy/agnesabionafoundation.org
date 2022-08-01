@@ -17,6 +17,7 @@ import Modal from 'react-modal';
 import "./Home.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Volunteer from "../Volunteer/Volunteer";
 
 
 const Home = () => {
@@ -308,6 +309,10 @@ const Home = () => {
                         </div>
                     </center>
                 </div>
+            </section>
+
+            <section>
+            <Volunteer />
             </section>
 
 
