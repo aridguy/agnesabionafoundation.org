@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 // import { Link } from "react-router-dom";
 import Logo1 from "../../Assets/Logo1.png";
-import AboutImg from "../../Assets/aboutImage.jpg";
+// import AboutImg from "../../Assets/aboutImage.jpg";
 import diamond from "../../Assets/helpIcon.gif";
 import Donate from "../../Assets/istockphoto-1212568100-170667a.jpg";
 import Donate2 from "../../Assets/istockphoto-1250668894-612x612.jpg";
@@ -17,7 +17,7 @@ import Modal from 'react-modal';
 import "./Home.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Volunteer from "../Volunteer/Volunteer";
+import Gallery from "../Gallery/Gallery";
 
 
 const Home = () => {
@@ -118,7 +118,7 @@ const Home = () => {
                         <li>Gallery</li>
                         <li onClick={() => setselectedNavLink("vision/Mission")}>Vision/Mission</li>
                         <li onClick={() => setselectedNavLink("contact us")}>Contact Us</li>
-                       
+
                         <li>
                             <button className="btn btn-warning donate">Volunteer</button>
                         </li>
@@ -138,7 +138,6 @@ const Home = () => {
                                         <h2><b className="s-t">Relation of Humanity</b></h2>
                                         <div className="lcare"><p className="lcare-text"></p></div>
                                         <button className="btn btn-warning donate">Donate</button>
-
                                     </div>
                                 </center>
                             </div>
@@ -157,10 +156,10 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">VOCATIONAL SKILLS AND TRAINING</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                Vocational learning opportunities play a critical role in skill 
-                                development and employability. The importance of vocational 
-                                development can largely be summed up. Agnes Abiona Foundation sponsor 
-                                young girls in different vocational schools.
+                                    Vocational learning opportunities play a critical role in skill
+                                    development and employability. The importance of vocational
+                                    development can largely be summed up. Agnes Abiona Foundation sponsor
+                                    young girls in different vocational schools.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -180,9 +179,9 @@ const Home = () => {
                             <div id="sect2textOnHover">
                                 <h1 className="text-white" id="secttwoHead">LEADERSHIP TRAINING</h1>
                                 <p className="text-white" id="sect2bdtext">
-                                Agnes Abiona Foundation arrange leaddership training programs for young females 
-                                which are designed to help them learn new leadership techniques 
-                                so as to be able to participate in government systems. 
+                                    Agnes Abiona Foundation arrange leaddership training programs for young females
+                                    which are designed to help them learn new leadership techniques
+                                    so as to be able to participate in government systems.
                                 </p>
                                 <button className="btn btn-lg btn-warning bts">Explore</button>
                             </div>
@@ -247,10 +246,10 @@ const Home = () => {
                         <div className="col-md-12">
                             <div className="whyDiv">
                                 <h1 id="whyHead">WHY EMPOWERMENT OF GIRLS AND YOUNG WOMEN?</h1>
-                                <p id="whyText"><i>"In Nigeria, the United Nations posits that women and girls 
-                                make up more than half of population but still do not have sufficient 
-                                access or opportunities to realize their full potentials as agents of change 
-                                who can provide solutions to most of the country’s most pressing issues."</i></p>
+                                <p id="whyText"><i>"In Nigeria, the United Nations posits that women and girls
+                                    make up more than half of population but still do not have sufficient
+                                    access or opportunities to realize their full potentials as agents of change
+                                    who can provide solutions to most of the country’s most pressing issues."</i></p>
                             </div>
                         </div>
                     </div>
@@ -311,8 +310,15 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
-            <Volunteer />
+            <section id="gallerySect">
+                <div className="container">
+                    <div className="row">
+                      <div className="col-md-4"></div>
+                      <div className="col-md-4"></div>
+                      <div className="col-md-4"></div>
+                      <div className="col-md-4"></div>
+                    </div>
+                </div>
             </section>
 
 
@@ -391,7 +397,7 @@ const Home = () => {
             </section>
 
 
-            
+
 
             <section ref={contactref} className="contact-bkg" id="contact">
                 <div className="container">

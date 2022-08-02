@@ -1,22 +1,12 @@
 import React from 'react'
-import "./Volunteer.css";
+import "./Gallery.css";
 
-const Volunteer = () => {
+const Gallery = () => {
     return (
         <div>
-            <section>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-md-3'></div>
-                        <div className='col-md-6'>
-                            
-                        </div>
-                        <div className='col-md-3'></div>
-                    </div>
-                </div>
-            </section>
+            
         </div>
     );
 }
 
-export default Volunteer;
+export default Gallery;
