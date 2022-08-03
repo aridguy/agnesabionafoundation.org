@@ -17,7 +17,9 @@ import Modal from 'react-modal';
 import "./Home.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Gallery from "../Gallery/Gallery";
+
+// gallery images
+// import Pics1 from "../../Assets/gallery/Pics1";
 
 
 const Home = () => {
@@ -115,7 +117,6 @@ const Home = () => {
                         <li onClick={() => setselectedNavLink("home")}>Home</li>
                         <li onClick={() => setselectedNavLink("about")} id="#aboutUs">About</li>
                         <li onClick={() => setselectedNavLink("what we do")}>What We Do</li>
-                        <li>Gallery</li>
                         <li onClick={() => setselectedNavLink("vision/Mission")}>Vision/Mission</li>
                         <li onClick={() => setselectedNavLink("contact us")}>Contact Us</li>
 
@@ -310,16 +311,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="gallerySect">
-                <div className="container">
-                    <div className="row">
-                      <div className="col-md-4"></div>
-                      <div className="col-md-4"></div>
-                      <div className="col-md-4"></div>
-                      <div className="col-md-4"></div>
-                    </div>
-                </div>
-            </section>
+            
 
 
             <style>
