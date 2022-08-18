@@ -19,7 +19,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // gallery images
-// import Pics1 from "../../Assets/gallery/Pics1";
+import piccc from "../../Assets/aboutImage.jpg";
+
 
 
 const Home = () => {
@@ -65,6 +66,7 @@ const Home = () => {
     const homeref = useRef("");
     const aboutref = useRef("");
     const whatwedoref = useRef("");
+    // const gallery = useRef("");
     const visionmissionref = useRef("");
     const contactref = useRef("");
     const faqref = useRef("");
@@ -90,6 +92,9 @@ const Home = () => {
         if (selectedNavLink === 'what we do') {
             whatwedoref.current.scrollIntoView();
         }
+        // if (selectedNavLink === 'gallery'){
+        //     gallery.current.scrollIntoView();
+        // }
         setselectedNavLink("");
     }, [selectedNavLink]);
 
@@ -311,7 +316,53 @@ const Home = () => {
                 </div>
             </section>
 
+            <style>
+                
+            </style>
+
+            <div class="container gallery-container">
+
+            <h1>Bootstrap 3 Gallery</h1>
+        
+            <p class="page-description text-center">Fluid Layout With Overlay Effect</p>
             
+            <div class="tz-gallery">
+        
+                <div class="row">
+        
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" alt="Bridge" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
+                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" alt="Park" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
+                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel" />
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
+                            <img src={piccc} alt="Traffic" />
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
+                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" alt="Coast" />
+                        </a>
+                    </div> 
+                    
+        
+                </div>
+        
+            </div>
+        
+        </div>
+    
 
 
             <style>
