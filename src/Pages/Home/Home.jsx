@@ -10,8 +10,6 @@ import SideSocialIcons from "../../Components/SideSocialIcons";
 import Founder from "../../Assets/sect2/founder.png";
 
 // import { useEffect } from "react";
-
-import Modal from 'react-modal';
 // import Carousel from 'react-bootstrap/Carousel';
 
 import "./Home.css";
@@ -20,7 +18,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // gallery images
 import piccc from "../../Assets/aboutImage.jpg";
-
+import Modal from 'react-modal';
 
 
 const Home = () => {
@@ -100,6 +98,7 @@ const Home = () => {
 
     return (
         <div>
+            
             <SideSocialIcons />
             <ToastContainer />
 
@@ -317,52 +316,52 @@ const Home = () => {
             </section>
 
             <style>
-                
+
             </style>
 
             <div class="container gallery-container">
 
-            <h1>Bootstrap 3 Gallery</h1>
-        
-            <p class="page-description text-center">Fluid Layout With Overlay Effect</p>
-            
-            <div class="tz-gallery">
-        
-                <div class="row">
-        
-                    <div class="col-sm-12 col-md-4">
-                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
-                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" alt="Bridge" />
-                        </a>
+                <h1>Bootstrap 3 Gallery</h1>
+
+                <p class="page-description text-center">Fluid Layout With Overlay Effect</p>
+
+                <div class="tz-gallery">
+
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-4">
+                            <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                                <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" alt="Bridge" />
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
+                                <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" alt="Park" />
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
+                                <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel" />
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-8">
+                            <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
+                                <img src={piccc} alt="Traffic" />
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
+                                <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" alt="Coast" />
+                            </a>
+                        </div>
+
+
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
-                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" alt="Park" />
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
-                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-8">
-                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
-                            <img src={piccc} alt="Traffic" />
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
-                            <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" alt="Coast" />
-                        </a>
-                    </div> 
-                    
-        
+
                 </div>
-        
+
             </div>
-        
-        </div>
-    
+
 
 
             <style>
