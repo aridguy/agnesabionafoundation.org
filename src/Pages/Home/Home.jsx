@@ -10,6 +10,8 @@ import SideSocialIcons from "../../Components/SideSocialIcons";
 import Founder from "../../Assets/sect2/founder.png";
 
 // import { useEffect } from "react";
+
+import Modal from 'react-modal';
 // import Carousel from 'react-bootstrap/Carousel';
 
 import "./Home.css";
@@ -18,7 +20,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // gallery images
 import piccc from "../../Assets/aboutImage.jpg";
-import Modal from 'react-modal';
+
 
 
 const Home = () => {
@@ -98,7 +100,7 @@ const Home = () => {
 
     return (
         <div>
-            
+        
             <SideSocialIcons />
             <ToastContainer />
 
