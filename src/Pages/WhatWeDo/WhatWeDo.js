@@ -74,7 +74,7 @@ const WhatWeDo = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='row'>
+                    <div className='row mt-4'>
                         <div className='col-md-8'>
                             <div className='mt-5'>
                                 <h3 className='purple w-700'>MENTORING</h3>
@@ -105,7 +105,7 @@ const WhatWeDo = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='row'>
+                    <div className='row mt-4'>
                         <div className='col-md-8'>
                             <div className='mt-5'>
                                 <h3 className='purple w-700'>LEADERSHIP TRAINING</h3>
