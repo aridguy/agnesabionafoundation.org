@@ -9,6 +9,14 @@ import AOS from 'aos';
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 
+// all home first gallery
+import Photo1 from '../../Assets/home/pics1.jpg'
+import Photo2 from '../../Assets/home/pics2.jpg'
+import Photo3 from '../../Assets/home/pics3.jpg'
+import Photo4 from '../../Assets/home/pics4.jpg'
+import Photo5 from '../../Assets/home/pics5.jpg'
+import Photo6 from '../../Assets/home/pics6.jpg'
+
 
 const Home = () => {
     useEffect(() => {
@@ -52,8 +60,8 @@ const Home = () => {
                     <div className="container wow slideInLeft" data-wow-delay="0.1s">
                         <div className="row">
                             <div className="col-md-2"></div>
-                            <div className="col-md-8">
-                                <center>
+                            <div className="col-md-8 mt-5">
+                                <center >
                                     <div className="main-head-contents w3-animate-bottom">
                                         <h1 className="hText">Agnes Abiona Foundation</h1>
                                         <h2 className="st2">There Is One Relation Above All</h2>
@@ -77,7 +85,6 @@ const Home = () => {
 
             {
                 // just a section one 1
-
                 <section className="bg-muted mb-5 pt-5">
                     <div className="container pt-5">
                         <div className="row">
@@ -118,21 +125,173 @@ const Home = () => {
                         </div>
                         <div className="col-md-3 mt-2">
                             <div className="guardianBox g3">
-                            <h2>Mentoring</h2>
+                                <h2>Mentoring</h2>
                             </div>
                         </div>
                         <div className="col-md-3 mt-2">
                             <div className="guardianBox g4">
-                            <h2>Leadership <br /> Training</h2>
+                                <h2>Leadership <br /> Training</h2>
                             </div>
                         </div>
                     </div>
                 </div>
+            }
 
+            {
+                <div className="container mt-5">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2>SOME PAST EVENTS --- --- --- </h2>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            {
+                <div
+                    id="carouselMultiItemExample"
+                    className="carousel slide carousel-dark text-center"
+                    data-mdb-ride="carousel"
+                >
+                    <div className="carousel-inner py-4">
+                        <div className="carousel-item active">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-4">
+                                        <div className="card">
+                                            <img
+                                                src={Photo1}
+                                                className="card-img-top"
+                                                alt="Waterfall"
+                                            />
+                                            <div className="card-body">
+                                                <h5 className="card-title">Card title</h5>
+                                                <p className="card-text">
+                                                    Some quick example text to build on the card title and make up the bulk
+                                                    of the card's content.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 d-none d-lg-block">
+                                        <div className="card">
+                                            <img
+                                                src={Photo2}
+                                                className="card-img-top"
+                                                alt="Sunset Over the Sea"
+                                            />
+                                            <div className="card-body">
+                                                <h5 className="card-title">Card title</h5>
+                                                <p className="card-text">
+                                                    Some quick example text to build on the card title and make up the bulk
+                                                    of the card's content.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 d-none d-lg-block">
+                                        <div className="card">
+                                            <img
+                                                src={Photo4}
+                                                className="card-img-top"
+                                                alt="Sunset over the Sea"
+                                            />
+                                            <div className="card-body">
+                                                <h5 className="card-title">Card title</h5>
+                                                <p className="card-text">
+                                                    Some quick example text to build on the card title and make up the bulk
+                                                    of the card's content.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+            {
+                <div
+                    id="carouselMultiItemExample"
+                    className="carousel slide carousel-dark text-center"
+                    data-mdb-ride="carousel"
+                >
+                    <div className="carousel-inner py-4">
+                        <div className="carousel-item active">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-lg-4">
+                                        <div className="card">
+                                            <img
+                                                src={Photo3}
+                                                className="card-img-top"
+                                                alt="Waterfall"
+                                            />
+                                            <div className="card-body">
+                                                <h5 className="card-title">Card title</h5>
+                                                <p className="card-text">
+                                                    Some quick example text to build on the card title and make up the bulk
+                                                    of the card's content.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 d-none d-lg-block">
+                                        <div className="card">
+                                            <img
+                                                src={Photo5}
+                                                className="card-img-top"
+                                                alt="Sunset Over the Sea"
+                                            />
+                                            <div className="card-body">
+                                                <h5 className="card-title">Card title</h5>
+                                                <p className="card-text">
+                                                    Some quick example text to build on the card title and make up the bulk
+                                                    of the card's content.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-4 d-none d-lg-block">
+                                        <div className="card">
+                                            <img
+                                                src={Photo6}
+                                                className="card-img-top"
+                                                alt="Sunset over the Sea"
+                                            />
+                                            <div className="card-body">
+                                                <h5 className="card-title">Card title</h5>
+                                                <p className="card-text">
+                                                    Some quick example text to build on the card title and make up the bulk
+                                                    of the card's content.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <i className="cursor brandColors">View more in our gallery --- --- ---</i>
+
+                </div>
             }
 
 
-            <section className="whySect pt-5">
+
+
+            <section className="whySect pt-5 mt-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

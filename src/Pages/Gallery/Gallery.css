@@ -1,0 +1,9 @@
+.galleryBkg{
+    background-image: url(../../Assets/gallery/gallery/galleryBkg.jpeg);
+    height: 40em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid purple;
+    background-attachment: fixed;
+}

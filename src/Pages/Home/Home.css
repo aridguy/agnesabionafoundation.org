@@ -6,11 +6,18 @@ html {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Urbanist:wght@700;900&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
 .landing {
     background-image: url(../../Assets/istockphoto-469538141-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40em;
+    height: 47em;
     background-attachment: fixed;
     border-bottom: 4px solid orange;
 }
@@ -20,7 +27,7 @@ html {
     z-index: 999;
     height: 70px;
     width: 100%;
-    background-color: #670842;
+    background-color: purple;
     position: relative;
     box-shadow: 2px 2px 20px 4px black;
     position: fixed;
@@ -94,7 +101,7 @@ html {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: rgba(118, 10, 93, 0.644);
+        background-color: purple;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -144,7 +151,7 @@ html {
 .guardianBox {
     height: 22em;
     width: 100%;
-    background-color: #670842;
+    background-color: purple;
     text-align: center;
     padding-top: 6em;
     color: white;
@@ -206,10 +213,6 @@ html {
 
 
 
-
-
-
-
 /* my customes starts here */
 
 .brand {
@@ -246,7 +249,7 @@ html {
 }
 
 .section2 {
-    background-color: #670842;
+    background-color: purple;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -321,7 +324,7 @@ html {
 
 .learn:hover {
     color: white;
-    background-color: #f5d612;
+    background-color: gold;
     outline: none;
     border: none;
 }
@@ -361,14 +364,14 @@ html {
 
 .learn2:hover {
     color: white;
-    background-color: #f5d612;
+    background-color: gold;
     outline: none;
     border: none;
 }
 
 #whatwedo {
     font-weight: 900;
-    color: orange;
+    color: gold;
 }
 
 
@@ -493,7 +496,7 @@ blockquote {
 
 .sideAtext {
     font-weight: bolder;
-    color: orange;
+    color: gold;
 }
 
 .conts {
@@ -557,7 +560,7 @@ blockquote {
 }
 
 t {
-    color: orange;
+    color: gold;
 }
 
 center>b {
@@ -578,7 +581,7 @@ center>b {
 .closeModalss {
     border: none;
     outline: none;
-    color: orange;
+    color: gold;
     background-color: white;
     font-weight: bolder;
 }
@@ -606,7 +609,7 @@ center>b {
 }
 
 .nletter {
-    color: rgb(136, 7, 7);
+    color: gold;
 }
 
 .darkBg {
@@ -722,4 +725,12 @@ center>b {
 .getWhiteColor:hover {
     color: white;
     text-decoration: none;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.brandColors{
+    color: purple;
 }

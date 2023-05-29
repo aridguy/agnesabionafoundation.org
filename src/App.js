@@ -6,6 +6,7 @@ import Gallery from './Pages/Gallery/Gallery';
 import About from './Pages/About/About';
 import WhatWeDo from './Pages/WhatWeDo/WhatWeDo';
 import VisionMision from './Pages/VisionMision/VisionMision';
+import Contact from './Pages/Contact/Contact';
 // import Navbar from './Components/Navbar/Navbar';
 // import Contact from './Pages/Contact/Contact';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="whatwedo" element={<WhatWeDo />} />
           <Route path="visionmision" element={<VisionMision />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
 

@@ -48,7 +48,7 @@ const About = () => {
                                 </div>
                                 <figure className="image-1">
                                     <a href="/" className="lightbox-image" data-fancybox="images">
-                                        <img width='400' src={Founder} alt="bfg" />
+                                        <img width='100%' src={Founder} alt="bfg" />
                                     </a>
                                 </figure>
                             </div>

@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo1 from "../../Assets/Logo1.png";
 
-const Navbar = ({ openModal }) => {
+const Navbar = () => {
     // FOR SECTION NAVIGATIONS
 
     return (
         <div>
-
             <div>
                 <div className="nav">
                     <input type="checkbox" id="nav-check" />
@@ -26,13 +25,12 @@ const Navbar = ({ openModal }) => {
                     <div className="nav-links navigationbar">
                         <li><Link className="getWhiteColor" to='/'>Home</Link></li>
                         <li><Link className="getWhiteColor" to='/about'>About Us</Link></li>
+                        <li><Link className="getWhiteColor" to='/visionmision'>Board of Trustee</Link></li>
                         <li><Link className="getWhiteColor" to='/gallery'>Our Gallery</Link></li>
                         <li><Link className="getWhiteColor" to='/whatwedo'>What We Do</Link></li>
                         <li><Link className="getWhiteColor" to='/visionmision'>Vision/Mission</Link></li>
-                        <li><Link className="getWhiteColor" to='/visionmision'>Contact us</Link></li>
-                        <li>
-                            <button className="btn btn-warning donate">Volunteer</button>
-                        </li>
+                        <li><Link className="getWhiteColor" to='/contact'>Contact us</Link></li>
+                        <li><button className="btn btn-warning donate">Volunteer</button></li>
                     </div>
                 </div>
             </div>
