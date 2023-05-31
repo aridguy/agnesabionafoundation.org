@@ -115,22 +115,22 @@ const Home = () => {
                     <div className="row mt-5">
                         <div className="col-md-3 mt-2">
                             <div className="guardianBox g1">
-                                <h2>Educational <br /> Support</h2>
+                                <h2 id="white">Educational <br /> Support</h2>
                             </div>
                         </div>
                         <div className="col-md-3 mt-2">
                             <div className="guardianBox g2">
-                                <h2>Vocational Skill <br />& Training</h2>
+                                <h2 id="white">Vocational Skill <br />& Training</h2>
                             </div>
                         </div>
                         <div className="col-md-3 mt-2">
                             <div className="guardianBox g3">
-                                <h2>Mentoring</h2>
+                                <h2 id="white">Mentoring</h2>
                             </div>
                         </div>
                         <div className="col-md-3 mt-2">
                             <div className="guardianBox g4">
-                                <h2>Leadership <br /> Training</h2>
+                                <h2 id="white">Leadership <br /> Training</h2>
                             </div>
                         </div>
                     </div>
@@ -366,9 +366,7 @@ const Home = () => {
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.000480581726!2d3.3471213647713713!3d6.6468599451937695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1654099218173!5m2!1sen!2sng"
                                     width="100%"
                                     height="450"
-                                    allowfullscreen=""
                                     loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
                                     title="theMap"
                                 ></iframe>
                             </div>

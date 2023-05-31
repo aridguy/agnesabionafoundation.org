@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div>
             <ToastContainer />
-            <div class="footer container-fluid p-5 text-white main-foot-wrap">
+            <div className="footer container-fluid p-5 text-white main-foot-wrap">
                 <div className="row">
                     <div className="col-md-3">
                         <b>OUR COMPANY</b>
@@ -41,7 +41,7 @@ const Footer = () => {
                         <form>
                             <div className="newsletters">
                                 <input id="nletterForm" required className="form-control nletter" type="email" name="email" placeholder="Enter your emails" />
-                                <button onClick={NewsletterVerify} className="btn btn-warning nLetterBtn">SUBMIT <i class="fa fa-send-o"></i></button>
+                                <button onClick={NewsletterVerify} className="btn btn-warning nLetterBtn">SUBMIT <i className="fa fa-send-o"></i></button>
                             </div>
                         </form>
                     </div>
