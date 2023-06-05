@@ -5,7 +5,7 @@ import Footer from '../../Components/Footer/Footer';
 import SideSocialIcons from '../../Components/SideSocialIcons';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import AOS from 'aos';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 // all mages importted below
 
 import Pic1 from '../../Assets/gallery/set1/poto-a.jpg'
@@ -95,6 +95,13 @@ const Gallery = () => {
   // ]
 
 
+  // FUNCTION TO ENLARGE THE IMAGES
+  const [enlarged, setEnlarged] = useState(false);
+
+  const toggleEnlarged = () => {
+    setEnlarged(!enlarged);
+  };
+
   return (
     <div>
       <Navbar />
@@ -128,10 +135,6 @@ const Gallery = () => {
         // </div>
       }
 
-
-
-
-
       <div className='container mt-5'>
         <div className='row'>
           <div className="accordion accordion-borderless" id="accordionExampleY">
@@ -151,11 +154,13 @@ const Gallery = () => {
                     <ResponsiveMasonry>
                       <Masonry columnsCount={4} gutter="10px">
                         <img
+                        onClick={toggleEnlarged}
                           data-aos="fade-up"
                           data-aos-anchor-placement="center-bottom"
                           alt='gallery'
                           src={Pic1}
                           style={{ width: "100%", display: "block" }}
+                          className={enlarged ? 'enlarged' : ''}
                         />
                         <img
                           data-aos="fade-up"

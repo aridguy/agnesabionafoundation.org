@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 // import diamond from "../../Assets/helpIcon.gif";
 import SideSocialIcons from "../../Components/SideSocialIcons";
-import Modal from 'react-modal';
 import "./Home.css";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -16,6 +15,7 @@ import Photo3 from '../../Assets/home/pics3.jpg'
 import Photo4 from '../../Assets/home/pics4.jpg'
 import Photo5 from '../../Assets/home/pics5.jpg'
 import Photo6 from '../../Assets/home/pics6.jpg'
+import Events from "../../Components/Events/Events";
 
 
 const Home = () => {
@@ -23,30 +23,6 @@ const Home = () => {
         AOS.init();
     }, []);
 
-    const customStyles = {
-        content: {
-            top: '50%',
-            left: '50%',
-            width: '50%',
-            height: '60%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            border: 'none',
-        },
-    };
-
-    let subtitle;
-    const [modalIsOpen, setIsOpen] = useState(false);
-    const openModal = () => setIsOpen(true);
-    const afterOpenModal = () => {
-        // references are now sync'd and can be accessed.
-        if (subtitle) {
-            subtitle.style.color = '#f00';
-        }
-    };
-    const closeModal = () => setIsOpen(false);
 
     return (
         <div>
@@ -288,8 +264,9 @@ const Home = () => {
                 </div>
             }
 
-
-
+            {
+                <Events />
+            }
 
             <section className="whySect pt-5 mt-5">
                 <div className="container">
@@ -352,7 +329,7 @@ const Home = () => {
                                 <span className="fa fa-whatsapp mx-3"></span>
                             </div>
                             <button
-                                onClick={openModal}
+                            
                                 className="btn btn-warning mt-5 text-white"
                             >
                                 Contact Us
@@ -376,62 +353,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <div>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Example Modal"
-                >
-                    <h2 ref={(_subtitle) => (subtitle = _subtitle)}>
-                        Leave Us A Message.
-                    </h2>
-                    <button className="closeModalss" onClick={closeModal}>
-                        X
-                    </button>
-                    <div>
-                        <div>
-                            <div className="row rowModal">
-                                <div className="col-md-12">
-                                    <div className="formModal">
-                                        <form>
-                                            <p>
-                                                <input
-                                                    required
-                                                    type="text"
-                                                    name="name"
-                                                    placeholder="Enter Name here"
-                                                    className="form-control"
-                                                />
-                                            </p>
-                                            <p>
-                                                <input
-                                                    required
-                                                    type="text"
-                                                    name="email"
-                                                    placeholder="Email Address Here"
-                                                    className="form-control"
-                                                />
-                                            </p>
-                                            <p>
-                                                <textarea
-                                                    className="form-control"
-                                                    placeholder="leave your message here"
-                                                ></textarea>
-                                            </p>
-
-                                            <button className="btn btn-block btn-warning">
-                                                Send Now
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </Modal>
-            </div>
+           
             <Footer />
         </div>
     );

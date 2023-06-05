@@ -1,88 +1,202 @@
 import React from 'react';
+import './contact.css'
 import Navbar from '../../Components/Navbar/Navbar';
+import { useForm, ValidationError } from '@formspree/react';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Contact = () => {
+  const navigateHome = useNavigate();
+  const HnadleGoHome = () =>{
+    navigateHome('/');
+  }
+
+  const [state, handleSubmit] = useForm("xdovrzqg");
+  if (state.succeeded) {
+    return <div>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-3'></div>
+          <div className='col-md-6'>
+            <div className='contactResponse'>
+              <div className='responseModal'>
+                <div className='modalText text-center'>
+                  <h2 className='white'>Thank you for reaching out to us,</h2>
+                  <p>we will get back to you as soon as possible.</p>
+                  <p>Thank you</p>
+                  <span onClick={HnadleGoHome} className='white cursor'>Home</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-md-3'></div>
+        </div>
+      </div>
+    </div>;
+  }
 
 
   return (
     <div>
-    <Navbar />
-      <section className="container">
-        <div className="row mt-5">
-          <div className="col-sm-12 text-center mb-4">
-            <a className="btn btn-primary" href="/"> Donate Now <i className="fa fa-dollar"></i></a>
-          </div>
-          <div className="col-sm-12 mb-4 col-md-5">
-            <div className="card border-primary rounded-0">
-              <div className="card-header p-0">
-                <div className="bg-primary text-white text-center py-2">
-                  <h3><i className="fa fa-envelope"></i> Write to us:</h3>
-                  <p className="m-0">We’ll write rarely, but only the best content.</p>
-                </div>
-              </div>
-              <div className="card-body p-3">
-                <div className="form-group">
-                  <label> Your name </label>
-                  <div className="input-group">
-                    <input value="" type="text" name="data[name]" className="form-control" id="inlineFormInputGroupUsername" placeholder="Your name" />
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label>Your email</label>
-                  <div className="input-group mb-2 mb-sm-0">
-                    <input type="email" value="" name="data[email]" className="form-control" id="inlineFormInputGroupUsername" placeholder="Email" />
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label>Subject</label>
-                  <div className="input-group mb-2 mb-sm-0">
-                    <input type="text" name="data[subject]" className="form-control" id="inlineFormInputGroupUsername" placeholder="Subject" />
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label>Message</label>
-                  <div className="input-group mb-2 mb-sm-0">
-                    <input type="text" className="form-control" name="mesg" />
-                  </div>
-                </div>
-                <div className="text-center">
-                  <input type="submit" name="submit" value="submit" className="btn btn-primary btn-block rounded-0 py-2" />
-                </div>
-
-              </div>
-
+      <Navbar />
+      <section className="contact-address-area">
+        <div className="container">
+          <div className="sec-title-style1 text-center max-width">
+            <div className="title">Contact Us</div>
+            <div className="text"><div className="decor-left"><span></span></div><p>Quick Contact</p><div className="decor-right"><span></span></div></div>
+            <div className="bottom-text">
+              <p>Agnes Abiona Foundation is has been able to support over 3k Plus Woman which includes Adults, YOund Women and Widows in different areas.</p>
             </div>
           </div>
-          <div className="col-sm-12 col-md-7">
-            <div className="mb-4">
-              <iframe
-                className="maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.000480581726!2d3.3471213647713713!3d6.6468599451937695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93f0ab57faff%3A0x8728d5c569c83028!2sAGNES%20ABIONA%20FOUNDATION!5e0!3m2!1sen!2sng!4v1654099218173!5m2!1sen!2sng"
-                width="100%"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="theMap"
-              ></iframe>
+          <div className="contact-address-box row">
+            <div className="col-sm-4 single-contact-address-box text-center">
+              <div className="icon-holder">
+                <span className="icon-clock-1">
+                  <span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span><span className="path5"></span><span className="path6"></span><span className="path7"></span><span className="path8"></span><span className="path9"></span><span className="path10"></span><span className="path11"></span><span className="path12"></span><span className="path13"></span><span className="path14"></span><span className="path15"></span><span className="path16"></span><span className="path17"></span><span className="path18"></span><span className="path19"></span><span className="path20"></span>
+                </span>
+              </div>
+              <h3 className=''>Contact us </h3>
+              <h2>Our Representatives are online 24/7</h2>
+            </div>
+            <div className="col-sm-4 single-contact-address-box main-branch">
+              <h3 style={{ color: 'white' }}>Contact Details</h3>
+              <div className="inner">
+                <ul>
+                  <li>
+                    <div className="title">
+                      <h4 className='white' style={{ color: 'white' }}>Address:</h4>
+                    </div>
+                    <div className="text">
+                      <p style={{ color: 'white' }}>5 Adeyemi Alao Street, Community <br /> Oke-Ira, Ogba Lagos</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="title">
+                      <h4 style={{ color: 'white' }}>Phone:</h4>
+                    </div>
+                    <div className="text">
+                      <p style={{ color: 'white' }}>+234 633 06463</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="title">
+                      <h4 style={{ color: 'white' }}>Office Hrs:</h4>
+                    </div>
+                    <div className="text">
+                      <p style={{ color: 'white' }}>Mon-Fri: 9:30am - 6:30pm<br /> Sat-Sun: Closed</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div className="row text-center">
-              <div className="col-md-4">
-                <a href='/' className="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i className="fa fa-map-marker"></i></a>
-                <p> Community Bus-Stop, 5 Adeyemi Alao St, Ogba, Lagos</p>
+            <div className="col-sm-4 single-contact-address-box text-center">
+              <div className="icon-holder">
+                <span className="icon-question-2">
+                  <span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span>
+                </span>
               </div>
-              <div className="col-md-4">
-                <a href='/' className="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i className="fa fa-phone"></i></a>
-                <p>+234 810 322 1622</p>
-              </div>
-              <div className="col-md-4">
-                <a href='/' className="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i className="fa fa-envelope"></i></a>
-                <p>contactus@agnesabionafoundation.com</p>
-              </div>
+              <h3 style={{ color: 'white' }}>Live Chat </h3>
+              <h2 style={{ color: 'white' }}>get instant response using our live chat</h2>
             </div>
           </div>
 
+
+        </div>
+      </section>
+
+      <section className="contact-info-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div className="contact-form">
+                <div className="row">
+                  <div className="col-xl-12">
+                    <div className="sec-title-style1 float-left">
+                      <div className="title">Send Us a Message</div>
+                      <div className="text"><div className="decor-left"><span></span></div><p>Contact Form</p></div>
+                    </div>
+                    <div className="text-box float-right">
+                      <p>send us a message our representatives will reach out to you withing 24hrs. </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="inner-box">
+                  <form onSubmit={handleSubmit} id="contact-form" className="default-form" method='POST'>
+                    <div className="row">
+                      <div className="col-xl-6 col-lg-12">
+                        <div className="row">
+                          <div className="col-xl-6">
+                            <div className="input-box">
+                              <input type="text" name="Name" placeholder="Name" required="" />
+                              <ValidationError
+                                prefix="Name"
+                                field="name"
+                                errors={state.errors}
+                              />
+                            </div>
+                            <div className="input-box">
+                              <input type="text" name="Phone" placeholder="Phone" />
+                              <ValidationError
+                                prefix="Phone"
+                                field="phone"
+                                errors={state.errors}
+                              />
+                            </div>
+                          </div>
+                          <div className="col-xl-6">
+                            <div className="input-box">
+                              <input type="email" name="Email" placeholder="Email" required="" />
+                              <ValidationError
+                                prefix="Email"
+                                field="email"
+                                errors={state.errors}
+                              />
+                            </div>
+                            <div className="input-box">
+                              <input type="text" name="Purpose" placeholder="Enquiries, Complains, Help..etc" />
+                              <ValidationError
+                                prefix="Purpose"
+                                field="purpose"
+                                errors={state.errors}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-xl-12">
+                            <div className="input-box">
+                              <input type="text" name="Subject" placeholder="Subject" />
+                              <ValidationError
+                                prefix="Subject"
+                                field="subject"
+                                errors={state.errors}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-xl-6 col-lg-12">
+                        <div className="input-box">
+                          <textarea name="Message" placeholder="Your Message..." required=""></textarea>
+                          <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+                          />
+                        </div>
+                        <div className="button-box">
+                          <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" />
+                          <button type="submit" disabled={state.submitting} data-loading-text="Please wait...">Send Message<span className="flaticon-next"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

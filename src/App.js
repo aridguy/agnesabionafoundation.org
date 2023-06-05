@@ -7,6 +7,7 @@ import About from './Pages/About/About';
 import WhatWeDo from './Pages/WhatWeDo/WhatWeDo';
 import VisionMision from './Pages/VisionMision/VisionMision';
 import Contact from './Pages/Contact/Contact';
+import Volunteer from './Pages/Volunteer/Volunteer';
 // import Navbar from './Components/Navbar/Navbar';
 // import Contact from './Pages/Contact/Contact';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="whatwedo" element={<WhatWeDo />} />
           <Route path="visionmision" element={<VisionMision />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="volunteer" element={<Volunteer />} />
         </Routes>
       </BrowserRouter>
 
