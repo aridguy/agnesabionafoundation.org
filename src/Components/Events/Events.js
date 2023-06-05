@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './Event.css'
+import AOS from 'aos';
+
 
 const Events = () => {
     const [showEvents, setShowEvents] = useState(false);
@@ -10,7 +12,10 @@ const Events = () => {
         setShowEvents(false)
     }
 
-
+  
+        useEffect(() => {
+            AOS.init();
+        }, []);
 
     return (
         <div>
@@ -25,7 +30,7 @@ const Events = () => {
             { showEvents &&
                 // event box modal
                 <div>
-                    <section className="mainBackg">
+                    <section className="mainBackg" data-aos="zoom-out-left">
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-3"></div>

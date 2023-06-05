@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './contact.css'
 import Navbar from '../../Components/Navbar/Navbar';
 import { useForm, ValidationError } from '@formspree/react';
 import { useNavigate } from 'react-router-dom';
+import AOS from 'aos';
 
 
 
@@ -11,6 +12,9 @@ const Contact = () => {
   const HnadleGoHome = () =>{
     navigateHome('/');
   }
+  useEffect(() => {
+    AOS.init();
+}, []);
 
   const [state, handleSubmit] = useForm("xdovrzqg");
   if (state.succeeded) {
@@ -20,7 +24,7 @@ const Contact = () => {
           <div className='col-md-3'></div>
           <div className='col-md-6'>
             <div className='contactResponse'>
-              <div className='responseModal'>
+              <div className='responseModal' data-aos="zoom-out-left">
                 <div className='modalText text-center'>
                   <h2 className='white'>Thank you for reaching out to us,</h2>
                   <p>we will get back to you as soon as possible.</p>
