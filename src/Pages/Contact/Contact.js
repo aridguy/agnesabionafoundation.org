@@ -4,41 +4,57 @@ import Navbar from '../../Components/Navbar/Navbar';
 import { useForm, ValidationError } from '@formspree/react';
 import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
+import Swal from 'sweetalert2';
+
+
 
 
 
 const Contact = () => {
   const navigateHome = useNavigate();
-  const HnadleGoHome = () =>{
-    navigateHome('/');
-  }
+      
   useEffect(() => {
     AOS.init();
-}, []);
+  }, []);
 
   const [state, handleSubmit] = useForm("xdovrzqg");
+  let timerInterval
   if (state.succeeded) {
-    return <div>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-md-3'></div>
-          <div className='col-md-6'>
-            <div className='contactResponse'>
-              <div className='responseModal' data-aos="zoom-out-left">
-                <div className='modalText text-center'>
-                  <h2 className='white'>Thank you for reaching out to us,</h2>
-                  <p>we will get back to you as soon as possible.</p>
-                  <p>Thank you</p>
-                  <span onClick={HnadleGoHome} className='white cursor'>Home</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='col-md-3'></div>
-        </div>
-      </div>
-    </div>;
+    Swal.fire({
+      title: 'Preparing your Message!',
+      html: 'message will be sent in <b></b> milliseconds.',
+      timer: 5000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading()
+        const b = Swal.getHtmlContainer().querySelector('b')
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft()
+        }, 100)
+      },
+      willClose: () => {
+        clearInterval(timerInterval)
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        Swal.fire({
+          icon: 'success',
+          title: 'messages set',
+          text: 'we will get in touch with you shortly!',
+          confirmButtonColor: '#800080',
+          confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> Great!',
+            willClose: () => {
+              navigateHome('/');
+            }
+
+        })
+      }
+    })
   }
+
+
 
 
   return (
@@ -203,7 +219,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   );
 };
 
