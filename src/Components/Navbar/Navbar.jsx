@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo1 from "../../Assets/Logo1.png";
+import Volunteer from "../../Pages/Volunteer/Volunteer";
 // import Volunteer from "../../Pages/Volunteer/Volunteer";
 
 
@@ -8,8 +9,8 @@ const Navbar = () => {
     // FOR SECTION NAVIGATIONS
 
     // performing some logic to navigate to the voluntyeer section
-    const navigate = useNavigate();
-    const GotoVolunteer = () => navigate('/Volunteer')
+    // const navigate = useNavigate();
+    // const GotoVolunteer = () => navigate('/Volunteer')
 
     return (
         <div>
@@ -36,7 +37,7 @@ const Navbar = () => {
                         <li><Link className="getWhiteColor" to='/whatwedo'>What We Do</Link></li>
                         <li><Link className="getWhiteColor" to='/visionmision'>Vision/Mission</Link></li>
                         <li><Link className="getWhiteColor" to='/contact'>Contact us</Link></li>
-                        <li><button onClick={GotoVolunteer} className="btn btn-warning donate">Volunteer</button></li>
+                        <li><Volunteer /></li>
                     </div>
                 </div>
             </div>

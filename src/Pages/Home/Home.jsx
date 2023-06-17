@@ -16,6 +16,7 @@ import Photo4 from '../../Assets/home/pics4.jpg'
 import Photo5 from '../../Assets/home/pics5.jpg'
 import Photo6 from '../../Assets/home/pics6.jpg'
 import Events from "../../Components/Events/Events";
+import Teams from "../../Components/Teams/Teams";
 
 
 const Home = () => {
@@ -141,12 +142,10 @@ const Home = () => {
                                                 alt="Waterfall"
                                             />
                                             <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
+                                                <h5 className="card-title">FOUNDATON PALLIATIVE PROGRAM</h5>
                                                 <p className="card-text">
-                                                    Some quick example text to build on the card title and make up the bulk
-                                                    of the card's content.
+                                                    FOUNDATION SUPPORT THE FEMALE STUDENTS OF COMMUNITY HIGH SCHOOL AKUTE IN OCTOBER 29 2021
                                                 </p>
-
                                             </div>
                                         </div>
                                     </div>
@@ -158,10 +157,9 @@ const Home = () => {
                                                 alt="Sunset Over the Sea"
                                             />
                                             <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
+                                                <h5 className="card-title"> FOUNDATON PALLIATIVE</h5>
                                                 <p className="card-text">
-                                                    Some quick example text to build on the card title and make up the bulk
-                                                    of the card's content.
+                                                    FOUNDATON PALLIATIVE PROGRAM FOR THE WDOWS IN JANAURY 18TH 2022
                                                 </p>
 
                                             </div>
@@ -175,21 +173,17 @@ const Home = () => {
                                                 alt="Sunset over the Sea"
                                             />
                                             <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
+                                                <h5 className="card-title">OFFICAL LAUNCHING</h5>
                                                 <p className="card-text">
-                                                    Some quick example text to build on the card title and make up the bulk
-                                                    of the card's content.
+                                                    OFFICAL LAUNCHING OF AGNES ABIONA FOUNDATION ON THE 31ST OCTOBER 2021
                                                 </p>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             }
 
@@ -211,10 +205,9 @@ const Home = () => {
                                                 alt="Waterfall"
                                             />
                                             <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
+                                                <h5 className="card-title">OFFICAL LAUNCHING</h5>
                                                 <p className="card-text">
-                                                    Some quick example text to build on the card title and make up the bulk
-                                                    of the card's content.
+                                                    OFFICAL LAUNCHING OF AGNES ABIONA FOUNDATION ON THE 31ST OCTOBER 2021
                                                 </p>
 
                                             </div>
@@ -228,10 +221,9 @@ const Home = () => {
                                                 alt="Sunset Over the Sea"
                                             />
                                             <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
+                                                <h5 className="card-title">FOUNDATION SUPPORT</h5>
                                                 <p className="card-text">
-                                                    Some quick example text to build on the card title and make up the bulk
-                                                    of the card's content.
+                                                    FOUNDATION SUPPORT THE FEMALE STUDENTS OF COMMUNITY HIGH SCHOOL AKUTE IN OCTOBER 29 2021
                                                 </p>
 
                                             </div>
@@ -245,12 +237,10 @@ const Home = () => {
                                                 alt="Sunset over the Sea"
                                             />
                                             <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
+                                                <h5 className="card-title"> THE PALLIATIVE FOR WIDOWS</h5>
                                                 <p className="card-text">
-                                                    Some quick example text to build on the card title and make up the bulk
-                                                    of the card's content.
+                                                    THE PALLIATIVE FOR WIDOWS ON THE 9TH OF JANAURY 2022
                                                 </p>
-
                                             </div>
                                         </div>
                                     </div>
@@ -266,6 +256,9 @@ const Home = () => {
 
             {
                 <Events />
+            }
+            {
+                <Teams />
             }
 
             <section className="whySect pt-5 mt-5">
@@ -329,7 +322,7 @@ const Home = () => {
                                 <span className="fa fa-whatsapp mx-3"></span>
                             </div>
                             <button
-                            
+
                                 className="btn btn-warning mt-5 text-white"
                             >
                                 Contact Us
@@ -353,7 +346,7 @@ const Home = () => {
                 </div>
             </section>
 
-           
+
             <Footer />
         </div>
     );

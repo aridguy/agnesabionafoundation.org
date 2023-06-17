@@ -54,9 +54,6 @@ const Contact = () => {
     })
   }
 
-
-
-
   return (
     <div>
       <Navbar />
