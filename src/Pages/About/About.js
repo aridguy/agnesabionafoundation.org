@@ -67,7 +67,7 @@ const About = () => {
                         indicators and methods in place to target the needs of different beneficiaries such
                         as educational supports, vocational skill acquisitions/training, capacity building,
                         provision of grants, supply of empowerment materials and start
-                        up support for women and girls.
+                        up support for women & girls.
                     </div>
 
                 </div>
