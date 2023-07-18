@@ -1,16 +1,17 @@
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 * {
     box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Urbanist:wght@700;900&display=swap');
 
 body {
-    font-family: 'Rubik', sans-serif;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Pangolin', cursive;
+  
 }
 
 .landing {
@@ -234,18 +235,18 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 3em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Pangolin', cursive;
 }
 
 .s-t {
     color: #ffffff;
-    letter-spacing: 8px;
+    letter-spacing: 1px;
 }
 
 .st2 {
     color: white;
-    letter-spacing: 8px;
-    font-family: 'folio';
+    letter-spacing: 1px;
+    font-family: poppins;
 }
 
 .section2 {
@@ -617,30 +618,6 @@ center>b {
     height: 5em;
 }
 
-#whyHead {
-    color: white;
-    font-weight: 700;
-}
-
-#whyText {
-    font-size: 30px;
-    text-align: justify;
-}
-
-.whySect {
-    background-image: url(../../Assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30em;
-    color: white;
-    background-attachment: fixed;
-    overflow-x: scroll;
-}
-
-.whyDiv {
-    margin-top: 4em;
-}
-
 
 .container.gallery-container {
     background-color: #fff;
@@ -736,4 +713,9 @@ center>b {
 }
 #white{
     color: #fff;
+}
+
+.fa-users-gear, .fa-chalkboard-user, .fa-network-wired, .fa-user-graduate{
+    color: purple;
+    font-size: 2.5em;
 }

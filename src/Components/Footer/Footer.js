@@ -16,10 +16,10 @@ const Footer = () => {
                     <div className="col-md-3">
                         <b>OUR COMPANY</b>
                         <p className="text-white">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            olor sit amet, consectetur adipisicing elit, sed do eiusmodolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmod
+                        AGNES ABIONA FOUNDATION is a registered non-governmental non-profit charitable 
+                        organization based in Nigeria that provide aid for underprivileged girls and 
+                        young women through development of empowerment program in order to fulfil 
+                        their God given potential
                         </p>
                     </div>
                     <div className="col-md-2">

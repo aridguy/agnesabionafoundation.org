@@ -16,7 +16,7 @@ import Photo4 from '../../Assets/home/pics4.jpg'
 import Photo5 from '../../Assets/home/pics5.jpg'
 import Photo6 from '../../Assets/home/pics6.jpg'
 import Events from "../../Components/Events/Events";
-import Teams from "../../Components/Teams/Teams";
+import Teams from "../../Pages/Teams/Teams";
 
 
 const Home = () => {
@@ -31,7 +31,6 @@ const Home = () => {
             <ToastContainer />
 
             <Navbar />
-
             <main>
                 <section className="landing">
                     <div className="container wow slideInLeft" data-wow-delay="0.1s">
@@ -59,7 +58,6 @@ const Home = () => {
                     </div>
                 </section>
             </main>
-
             {
                 // just a section one 1
                 <section className="bg-muted mb-5 pt-5">
@@ -70,7 +68,7 @@ const Home = () => {
                                 <center><h2 className="w-700">Advancing Peace & Global Well-Being of Women Accross Nigeria</h2></center>
                                 <small id="theSectAboutTxt">AGNES ABIONA FOUNDATION is a registered non-governmental non-profit charitable organization
                                     based in Nigeria that provide aid for underprivileged girls and young women through development
-                                    of empowerment program in order to fulfil their God given potential.
+                                    of empowerment programs in order to fulfil their God given potentials.
                                 </small>
                             </div>
                             <div className="col-md-2"></div>
@@ -90,24 +88,56 @@ const Home = () => {
                         <div className="col-md-4"></div>
                     </div>
                     <div className="row mt-5">
-                        <div className="col-md-3 mt-2">
-                            <div className="guardianBox g1">
-                                <h2 id="white">Educational <br /> Support</h2>
+                        <div className="col-md-3">
+                            <div className="we-head text-center">
+                                <i className="fas fa-user-graduate mt-3"></i>
+                                <h4>Educational Support</h4>
+                            </div>
+                            <div className="we-txt text-center mt-4">
+                                <span className="">
+                                    AAF is guided by the principle that education is basic human right
+                                    and all children must have access and also believe that it
+                                    is one of the veritable empowerment tools against poverty
+                                </span>
                             </div>
                         </div>
-                        <div className="col-md-3 mt-2">
-                            <div className="guardianBox g2">
-                                <h2 id="white">Vocational Skill <br />& Training</h2>
+                        <div className="col-md-3">
+                            <div className="we-head text-center">
+                                <i className="fas fa-network-wired mt-3"></i>
+                                <h4>Vocational Skill & Training</h4>
+                            </div>
+                            <div className="we-txt text-center mt-4">
+                                <span className="">
+                                    One of the focal points of AAF is to provide support through vocational skills
+                                    acquisition to indigent girls and young women who are not interested in pursuing
+                                    formal education to fulfill their potential
+                                </span>
                             </div>
                         </div>
-                        <div className="col-md-3 mt-2">
-                            <div className="guardianBox g3">
-                                <h2 id="white">Mentoring</h2>
+                        <div className="col-md-3">
+                            <div className="we-head text-center mt-3">
+                                <i className="fas fa-chalkboard-user"></i>
+                                <h4>Mentoring</h4>
+                            </div>
+                            <div className="we-txt text-center mt-4">
+                                <span className="">
+                                    As girls navigate adolescent stage, they face challenge
+                                    of moving through physical, psychological, sexual, and
+                                    emotional development with a healthy sense of self intact.
+                                </span>
                             </div>
                         </div>
-                        <div className="col-md-3 mt-2">
-                            <div className="guardianBox g4">
-                                <h2 id="white">Leadership <br /> Training</h2>
+                        <div className="col-md-3">
+                            <div className="we-head text-center mt-3">
+                                <i className="fas fa-users-gear"></i>
+                                <h4>Leadership Training</h4>
+                            </div>
+                            <div className="we-txt text-center mt-4">
+                                <span className="">
+                                    The leadership training for girls and young women of this
+                                    foundation will empower necessary skills in leadership quality
+                                    needed for them to actively participate in the leadership role.
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -260,34 +290,10 @@ const Home = () => {
             {
                 <Teams />
             }
-
-            <section className="whySect pt-5 mt-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="whyDiv">
-                                <h1
-                                    id="whyHead"
-                                    data-aos="fade-up">
-                                    WHY EMPOWERMENT OF GIRLS AND YOUNG WOMEN?
-                                </h1>
-                                <p id="whyText">
-                                    <i data-aos="fade-up">
-                                        "In Nigeria, the United Nations posits that women and girls
-                                        make up more than half of the population but still do not
-                                        have sufficient access or opportunities to realize their
-                                        full potentials as agents of change who can provide
-                                        solutions to most of the country’s most pressing issues."
-                                    </i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          
 
 
-            <section className="contact-bkg" id="contact">
+            <section section className="contact-bkg" id="contact">
                 <div className="container">
                     <div className="row wow fadeInRight animated">
                         <div className="col-md-1"></div>
@@ -345,8 +351,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
-
             <Footer />
         </div>
     );

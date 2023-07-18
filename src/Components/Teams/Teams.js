@@ -29,8 +29,8 @@ const Teams = () => {
         <div>
             <div className="container mt-5 pt-5">
                 <div className="row">
-                    <h2 class="black text-center aos-init aos-animate" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Our Team</h2>
-                    <p class="txtculture text-center black w-800 aos-init aos-animate" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Our Team is what made us 'us' <br /> its all about the greatest good.</p>
+                    <h2 className="black text-center aos-init aos-animate" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Our Team</h2>
+                    <p className="txtculture text-center black w-800 aos-init aos-animate" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">Our Team is what made us 'us' <br /> its all about the greatest good.</p>
                     <div className="col-md-12 text-center">
                     </div>
                 </div>
