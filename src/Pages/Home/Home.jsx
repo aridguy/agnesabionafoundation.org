@@ -18,12 +18,10 @@ import Photo6 from '../../Assets/home/pics6.jpg'
 import Events from "../../Components/Events/Events";
 import Teams from "../../Pages/Teams/Teams";
 
-
 const Home = () => {
     useEffect(() => {
         AOS.init();
     }, []);
-
 
     return (
         <div>
@@ -322,10 +320,10 @@ const Home = () => {
                                 <p>
                                     <b>FIND US ON SOCIAL MEDIA</b>
                                 </p>
-                                <span className="fa fa-facebook"></span>
-                                <span className="fa fa-twitter mx-3"></span>
-                                <span className="fa fa-youtube mx-3"></span>
-                                <span className="fa fa-whatsapp mx-3"></span>
+                                <span className="fab fa-facebook"></span>
+                                <span className="fab fa-twitter mx-3"></span>
+                                <span className="fab fa-youtube mx-3"></span>
+                                <span className="fab fa-whatsapp mx-3"></span>
                             </div>
                             <button
 
