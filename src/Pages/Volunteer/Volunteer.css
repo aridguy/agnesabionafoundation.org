@@ -1,3 +1,42 @@
-.h1{
+.h1 {
     color: red;
 }
+
+.parentVolunteerBg {
+    background-image: url(../../Assets/volunteerBg.mp4);
+    height: 40em;
+}
+
+.playVid {
+    width: 100%;
+    object-fit: cover;
+    height: 53em;
+    position: absolute;
+    z-index: -1;
+}
+
+.formBg {
+    background-color: rgba(0, 0, 0, 0.925);
+    width: 100%;
+    height: 53em;
+}
+
+.formInnerPlace {
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    height: 40em;
+    margin-top: 3em;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(255, 255, 255)
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: purple
+  }
+  .opportunityEqu{
+    color: red;
+    font-weight: 700;
+  }

@@ -18,17 +18,31 @@ import Photo6 from '../../Assets/home/pics6.jpg'
 import Events from "../../Components/Events/Events";
 import Teams from "../../Pages/Teams/Teams";
 
+
 const Home = () => {
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
     useEffect(() => {
         AOS.init();
     }, []);
 
     return (
         <div>
+            <div className="header">
+                <div className="progress-container">
+                    <div className="progress-bar" id="myBar"></div>
+                </div>
+            </div>
             <SideSocialIcons />
             <ToastContainer />
 
             <Navbar />
+            
             <main>
                 <section className="landing">
                     <div className="container wow slideInLeft" data-wow-delay="0.1s">
@@ -284,12 +298,11 @@ const Home = () => {
 
             {
                 <Events />
+                
             }
             {
                 <Teams />
             }
-          
-
 
             <section section className="contact-bkg" id="contact">
                 <div className="container">

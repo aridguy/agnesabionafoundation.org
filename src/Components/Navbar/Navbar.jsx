@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo1 from "../../Assets/Logo1.png";
-import Volunteer from "../../Pages/Volunteer/Volunteer";
 // import Volunteer from "../../Pages/Volunteer/Volunteer";
+
 
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <div>
-       
+          
             <div>
                 <div className="nav">
                     <input type="checkbox" id="nav-check" />
@@ -37,7 +37,7 @@ const Navbar = () => {
                         <li><Link className="getWhiteColor" to='/whatwedo'>What We Do</Link></li>
                         <li><Link className="getWhiteColor" to='/visionmision'>Vision/Mission</Link></li>
                         <li><Link className="getWhiteColor" to='/contact'>Contact us</Link></li>
-                        <li><Volunteer /></li>
+                        <li><Link className="getWhiteColor" to='/volunteer'>Volunteer</Link></li>
                     </div>
                 </div>
             </div>

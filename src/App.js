@@ -27,6 +27,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="volunteer" element={<Volunteer />} />
           <Route path="teams " element={<Teams />} />
+          <Route path="volunteer" element={<Volunteer />} />
         </Routes>
       </BrowserRouter>
 

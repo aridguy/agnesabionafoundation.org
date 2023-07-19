@@ -719,3 +719,33 @@ center>b {
     color: purple;
     font-size: 2.5em;
 }
+
+ .header {
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    /* background-color: #d80a0a; */
+  }
+  
+  .header h2 {
+    text-align: center;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: purple;
+  }
+  
+  .progress-bar {
+    height: 3px;
+    background: orange;
+    width: 0%;
+  }
+  
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  } 
