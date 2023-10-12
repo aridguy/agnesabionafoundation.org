@@ -86,6 +86,14 @@ const Contact = () => {
                   </li>
                   <li>
                     <div className="title">
+                      <h4 className='white' style={{ color: 'white' }}>Email:</h4>
+                    </div>
+                    <div className="text">
+                      <p style={{ color: 'white' }}>agnesabionafoundation@gmail.com</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="title">
                       <h4 style={{ color: 'white' }}>Phone:</h4>
                     </div>
                     <div className="text">

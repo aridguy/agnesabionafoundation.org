@@ -21,7 +21,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigateToVolunteer = useNavigate();
-  const GotoContactUs = () => navigateToVolunteer("/volunteer");
+  const GotoContactUs = () => navigateToVolunteer("/contact");
   window.onscroll = function () {
     myFunction();
   };
@@ -104,7 +104,7 @@ const Home = () => {
       }
       {
         // just a section one 1
-        <div className="container mb-5">
+        <div className="container mb-5 black">
           <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
@@ -119,7 +119,7 @@ const Home = () => {
                 <h4>Educational Support</h4>
               </div>
               <div className="we-txt text-center mt-4">
-                <span className="black">
+                <span className="span">
                   AAF is guided by the principle that education is basic human
                   right and all children must have access and also believe that
                   it is one of the veritable empowerment tools against poverty
