@@ -6,10 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
 import Swal from 'sweetalert2';
 
-
-
-
-
 const Contact = () => {
   const navigateHome = useNavigate();
       

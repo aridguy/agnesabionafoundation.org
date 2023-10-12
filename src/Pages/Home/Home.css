@@ -85,7 +85,9 @@ body {
         height: 50px;
         padding: 13px;
     }
-
+.black{
+    color: black;
+}
     .nav>.nav-btn>label:hover,
     .nav #nav-check:checked~.nav-btn>label {
         background-color: rgba(118, 10, 92, 0.3);
@@ -104,7 +106,7 @@ body {
         width: 100%;
         background-color: purple;
         height: 0px;
-        transition: all 0.3s ease-in;
+        transition: all 0.3s cubic-bezier(0, 2.66, 0, -1.44);
         overflow-y: hidden;
         top: 50px;
         left: 0px;
@@ -210,9 +212,6 @@ body {
 .g4:hover {
     top: -10px;
 }
-
-
-
 
 /* my customes starts here */
 
