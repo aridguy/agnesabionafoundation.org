@@ -9,10 +9,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Urbanist:wght@700;900&display=swap');
 
-body {
+/* body {
     font-family: 'Pangolin', cursive;
   
-}
+} */
 
 .landing {
     background-image: url(../../Assets/istockphoto-469538141-612x612.jpg);
@@ -238,7 +238,7 @@ span {
     color: white;
     text-transform: uppercase;
     font-size: 3em;
-    font-family: 'Pangolin', cursive;
+    /* font-family: 'Pangolin', cursive; */
 }
 
 .s-t {
@@ -249,7 +249,7 @@ span {
 .st2 {
     color: white;
     letter-spacing: 1px;
-    font-family: poppins;
+    /* font-family: poppins; */
 }
 
 .section2 {

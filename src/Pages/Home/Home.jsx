@@ -49,7 +49,6 @@ const Home = () => {
       <ToastContainer />
 
       <Navbar />
-
       <main>
         <section className="landing">
           <div className="container wow slideInLeft" data-wow-delay="0.1s">
