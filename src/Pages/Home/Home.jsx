@@ -59,7 +59,7 @@ const Home = () => {
                 <center>
                   <div className="main-head-contents w3-animate-bottom">
                     <h1 className="hText">Agnes Abiona Foundation</h1>
-                    <h2 className="st2">There Is One Relation Above All</h2>
+                    <h2 className="st2">There is one relation above all</h2>
                     <h2>
                       <b className="s-t">Relation of Humanity</b>
                     </h2>
